@@ -24,6 +24,7 @@ description: "Tell us about your project: we will call you back to arrange a fre
     <label class="full">Job description<textarea name="Descrizione" placeholder="E.g. 6 m² bathroom to redo completely, bathtub to replace with a shower" required></textarea></label>
     <p class="full cap" style="margin:0">Have photos? Send them on <a href="https://wa.me/{{ I.whatsapp }}">WhatsApp</a> after sending your request.</p>
     <label class="check full"><input type="checkbox" name="Privacy" value="Accepted" required> <span>I have read the <a href="/en/privacy/">privacy notice</a> and agree to be contacted.</span></label>
+    <p id="form-msg" class="full note" role="alert" hidden style="background:#FFF6DD;border:1px solid #E8D59B;padding:12px 16px;border-radius:4px"></p>
     <button class="btn btn-primary full" type="submit">Send request</button>
   </form>
   <aside class="contact-card">
@@ -35,4 +36,10 @@ description: "Tell us about your project: we will call you back to arrange a fre
     <p class="cap" style="margin:0">{{ I.ragione_sociale }} · VAT no. {{ I.piva }}</p>
   </aside>
 </div></section>
-<script>document.getElementById("redir").value=location.origin+"/en/thank-you/";</script>
+<script>
+(function(){var f=document.querySelector('form[action*="web3forms"]');document.getElementById("redir").value=location.origin+"/en/thank-you/";
+f.addEventListener("submit",function(e){e.preventDefault();var b=f.querySelector("button[type=submit]"),m=document.getElementById("form-msg");b.disabled=true;m.hidden=true;
+fetch(f.action,{method:"POST",headers:{"Accept":"application/json"},body:new FormData(f)}).then(function(r){return r.json().then(function(j){return {ok:r.ok&&j.success,j:j};});})
+.then(function(x){if(x.ok){location.href="/en/thank-you/";}else{throw new Error((x.j&&x.j.message)||"errore");}})
+.catch(function(er){m.textContent="Sending failed. Please call or WhatsApp us on 324 568 9619. Details: "+er.message;m.hidden=false;b.disabled=false;});});})();
+</script>

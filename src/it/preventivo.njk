@@ -24,6 +24,7 @@ description: "Raccontaci il lavoro che hai in mente: ti richiamiamo per un sopra
     <label class="full">Descrizione del lavoro<textarea name="Descrizione" placeholder="Es. bagno di 6 mq da rifare completamente, vasca da sostituire con doccia" required></textarea></label>
     <p class="full cap" style="margin:0">Hai delle foto? Mandacele su <a href="https://wa.me/{{ I.whatsapp }}">WhatsApp</a> dopo aver inviato la richiesta.</p>
     <label class="check full"><input type="checkbox" name="Privacy" value="Accettata" required> <span>Ho letto l'<a href="/privacy/">informativa privacy</a> e accetto di essere ricontattato.</span></label>
+    <p id="form-msg" class="full note" role="alert" hidden style="background:#FFF6DD;border:1px solid #E8D59B;padding:12px 16px;border-radius:4px"></p>
     <button class="btn btn-primary full" type="submit">Invia la richiesta</button>
   </form>
   <aside class="contact-card">
@@ -35,4 +36,10 @@ description: "Raccontaci il lavoro che hai in mente: ti richiamiamo per un sopra
     <p class="cap" style="margin:0">{{ I.ragione_sociale }} · P.IVA {{ I.piva }}</p>
   </aside>
 </div></section>
-<script>document.getElementById("redir").value=location.origin+"/grazie/";</script>
+<script>
+(function(){var f=document.querySelector('form[action*="web3forms"]');document.getElementById("redir").value=location.origin+"/grazie/";
+f.addEventListener("submit",function(e){e.preventDefault();var b=f.querySelector("button[type=submit]"),m=document.getElementById("form-msg");b.disabled=true;m.hidden=true;
+fetch(f.action,{method:"POST",headers:{"Accept":"application/json"},body:new FormData(f)}).then(function(r){return r.json().then(function(j){return {ok:r.ok&&j.success,j:j};});})
+.then(function(x){if(x.ok){location.href="/grazie/";}else{throw new Error((x.j&&x.j.message)||"errore");}})
+.catch(function(er){m.textContent="Invio non riuscito. Chiamaci o scrivici su WhatsApp al 324 568 9619. Dettaglio: "+er.message;m.hidden=false;b.disabled=false;});});})();
+</script>
