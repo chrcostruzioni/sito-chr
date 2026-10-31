@@ -14,7 +14,7 @@ description: "Raccontaci il lavoro che hai in mente: ti richiamiamo per un sopra
     <input type="hidden" name="access_key" value="{{ I.web3forms_key }}">
     <input type="hidden" name="subject" value="Nuova richiesta di preventivo dal sito">
     <input type="hidden" name="from_name" value="Sito CHR Costruzioni">
-    <input type="hidden" name="redirect" value="{{ I.dominio }}/grazie/">
+    <input type="hidden" name="redirect" id="redir" value="{{ I.dominio }}/grazie/">
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
     <label>Nome e cognome<input name="Nome" autocomplete="name" required></label>
     <label>Telefono<input name="Telefono" type="tel" autocomplete="tel" required></label>
@@ -35,3 +35,4 @@ description: "Raccontaci il lavoro che hai in mente: ti richiamiamo per un sopra
     <p class="cap" style="margin:0">{{ I.ragione_sociale }} · P.IVA {{ I.piva }}</p>
   </aside>
 </div></section>
+<script>document.getElementById("redir").value=location.origin+"/grazie/";</script>

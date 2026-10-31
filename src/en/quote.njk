@@ -14,7 +14,7 @@ description: "Tell us about your project: we will call you back to arrange a fre
     <input type="hidden" name="access_key" value="{{ I.web3forms_key }}">
     <input type="hidden" name="subject" value="New quote request from the website (English)">
     <input type="hidden" name="from_name" value="Sito CHR Costruzioni">
-    <input type="hidden" name="redirect" value="{{ I.dominio }}/en/thank-you/">
+    <input type="hidden" name="redirect" id="redir" value="{{ I.dominio }}/en/thank-you/">
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
     <label>Full name<input name="Nome" autocomplete="name" required></label>
     <label>Phone<input name="Telefono" type="tel" autocomplete="tel" required></label>
@@ -35,3 +35,4 @@ description: "Tell us about your project: we will call you back to arrange a fre
     <p class="cap" style="margin:0">{{ I.ragione_sociale }} · VAT no. {{ I.piva }}</p>
   </aside>
 </div></section>
+<script>document.getElementById("redir").value=location.origin+"/en/thank-you/";</script>
