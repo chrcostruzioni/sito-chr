@@ -1,0 +1,93 @@
+# Pannello di modifica (Pages CMS: https://app.pagescms.org)
+media:
+  input: src/media
+  output: /media
+content:
+  - name: lavori
+    label: Lavori realizzati
+    type: collection
+    path: content/lavori
+    format: yaml
+    filename: "{fields.slug}.yml"
+    view:
+      fields: [titolo_it, luogo, ordine]
+      primary: titolo_it
+      sort: [ordine]
+    fields:
+      - { name: titolo_it, label: Titolo (italiano), type: string, required: true }
+      - { name: titolo_en, label: Titolo (inglese), type: string, required: true }
+      - { name: slug, label: "Indirizzo della pagina (solo minuscole e trattini, es. bagno-casalecchio)", type: string, required: true }
+      - { name: luogo, label: "Luogo (es. Casalecchio di Reno (BO)), facoltativo", type: string }
+      - name: categorie
+        label: Categorie
+        type: select
+        options:
+          multiple: true
+          values:
+            - { value: ristrutturazioni, label: Ristrutturazioni }
+            - { value: bagni, label: Bagni }
+            - { value: cucine, label: Cucine }
+            - { value: tetti, label: Tetti }
+            - { value: impermeabilizzazioni, label: Impermeabilizzazioni }
+            - { value: linee-vita, label: Linee vita }
+      - { name: descrizione_it, label: Descrizione (italiano), type: text }
+      - { name: descrizione_en, label: Descrizione (inglese), type: text }
+      - { name: copertina, label: Foto di copertina, type: image, required: true }
+      - { name: prima, label: Foto PRIMA (facoltativa), type: image }
+      - { name: dopo, label: Foto DOPO (facoltativa), type: image }
+      - name: foto
+        label: Altre foto
+        type: object
+        list: true
+        fields:
+          - { name: file, label: Foto, type: image }
+          - { name: it, label: Didascalia (italiano), type: string }
+          - { name: en, label: Didascalia (inglese), type: string }
+      - name: video
+        label: Video brevi (MP4, senza audio)
+        type: object
+        list: true
+        fields:
+          - { name: file, label: Video, type: file }
+          - { name: poster, label: Immagine di anteprima, type: image }
+          - { name: verticale, label: Video verticale, type: boolean }
+          - { name: it, label: Didascalia (italiano), type: string }
+          - { name: en, label: Didascalia (inglese), type: string }
+      - { name: ordine, label: "Ordine (1 = primo)", type: number }
+      - { name: in_evidenza, label: In evidenza, type: boolean }
+      - { name: pubblicato, label: "Pubblicato (togli la spunta per nasconderlo)", type: boolean, default: true }
+  - name: impresa
+    label: Dati dell'impresa
+    type: file
+    path: src/_data/impresa.json
+    format: json
+    fields:
+      - { name: telefono, label: Telefono (come si legge), type: string }
+      - { name: telefono_link, label: "Telefono per il link (+39...)", type: string }
+      - { name: whatsapp, label: "WhatsApp (39 + numero, senza spazi)", type: string }
+      - { name: email, label: Email, type: string }
+      - { name: instagram, label: Nome Instagram (senza @), type: string }
+      - { name: facebook, label: "Indirizzo pagina Facebook (facoltativo)", type: string }
+      - { name: orari_it, label: Orari (italiano), type: string }
+      - { name: orari_en, label: Orari (inglese), type: string }
+      - { name: nome, label: Nome, type: string }
+      - { name: ragione_sociale, label: Ragione sociale, type: string }
+      - { name: piva, label: Partita IVA, type: string }
+      - { name: titolare, label: Titolare, type: string }
+      - { name: dominio, label: Dominio, type: string }
+      - { name: web3forms_key, label: "Chiave del modulo (Web3Forms)", type: string }
+  - name: recensioni
+    label: Recensioni
+    type: file
+    path: src/_data/recensioni.json
+    format: json
+    fields:
+      - name: elenco
+        label: Recensioni
+        type: object
+        list: true
+        fields:
+          - { name: nome, label: Nome del cliente, type: string }
+          - { name: luogo, label: Luogo, type: string }
+          - { name: stelle, label: Stelle (1-5), type: number }
+          - { name: testo, label: Testo della recensione, type: text }

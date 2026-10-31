@@ -1,0 +1,11 @@
+{% macro ba(job, L, lang) %}
+<div class="ba"><figure><img src="{{ job.prima | img }}" alt="{{ L.prima }}: {{ job['titolo_' + lang] }}" loading="lazy"><figcaption>{{ L.prima }}</figcaption></figure><figure><img src="{{ job.dopo | img }}" alt="{{ L.dopo }}: {{ job['titolo_' + lang] }}" loading="lazy"><figcaption>{{ L.dopo }}</figcaption></figure></div>
+{% endmacro %}
+
+{% macro vid(v, lang, cls) %}
+<video src="{{ v.file | vid }}" poster="{{ v.poster | img }}" class="{{ cls or ('v916' if v.verticale else 'v43') }}" autoplay muted loop playsinline preload="metadata" aria-label="{{ v[lang] }}"></video>
+{% endmacro %}
+
+{% macro card(job, L, lang) %}
+<a class="job-card" href="{{ L.lavori }}{{ job.slug }}/"><img src="{{ job.copertina | img }}" alt="{{ job['titolo_' + lang] }}" loading="lazy"><span>{% for c in job.categorie %}<span class="tag">{{ L.cat[c] }}</span>{% endfor %}</span><h3>{{ job['titolo_' + lang] }}</h3>{% if job.luogo %}<span class="cap" style="margin:0">{{ job.luogo }}</span>{% endif %}</a>
+{% endmacro %}

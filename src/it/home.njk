@@ -1,0 +1,86 @@
+---
+layout: base.njk
+lang: it
+permalink: /
+alt: /en/
+title: "Impresa edile Bologna: ristrutturazioni, preventivo gratuito | CHR Costruzioni"
+description: "Ristrutturazioni complete, bagni, cucine, tetti e impermeabilizzazioni a Bologna e provincia. Oltre 12 anni di esperienza. Sopralluogo e preventivo gratuiti."
+---
+{% from "macro.njk" import vid, card %}
+{% set L = lingue.it %}
+{% set pia = lavori | trovaLavoro('pianoro-ristrutturazione-completa') %}
+<div class="wrap hero">
+  <div>
+    <span class="eyebrow">Impresa edile a Bologna e provincia</span>
+    <h1>Ristrutturazioni complete, fatte bene.</h1>
+    <p class="lead">Ristrutturiamo case e appartamenti, rifacciamo bagni e cucine, impermeabilizziamo balconi, terrazze e tetti. Un'unica impresa che segue il lavoro dall'inizio alla fine.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="/preventivo/">Richiedi un preventivo gratuito</a>
+      <a class="btn btn-ghost" href="/lavori/">Guarda i lavori</a>
+    </div>
+  </div>
+  <figure>
+    <a href="/lavori/pianoro-ristrutturazione-completa/"><img src="/media/img/pia-13.jpg" alt="Soggiorno ristrutturato a Pianoro con parquet a spina di pesce e portefinestre sul giardino" width="1400" height="1050"></a>
+    <figcaption>Ristrutturazione completa, Pianoro (BO)</figcaption>
+  </figure>
+</div>
+
+<div class="facts">
+  <div><strong>Oltre 12 anni</strong><span>di esperienza nel settore</span></div>
+  <div><strong>Bologna e 20 km</strong><span>la zona in cui lavoriamo</span></div>
+  <div><strong>Gratis</strong><span>sopralluogo e preventivo</span></div>
+</div>
+
+<section class="band white"><div class="wrap split" style="align-items:center">
+  <div class="stack">
+    <span class="eyebrow">Lavoro in evidenza</span>
+    <h2>Pianoro: una casa rifatta da capo</h2>
+    <p>{{ pia.descrizione_it }}</p>
+    <p><a class="btn btn-primary" href="/lavori/pianoro-ristrutturazione-completa/">Guarda il cantiere</a></p>
+  </div>
+  <figure class="featured-video">{{ vid(pia.video[0], 'it') }}</figure>
+</div></section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Cosa facciamo</span><h2>Tre tipi di lavoro, un solo referente</h2></div>
+    <div class="services">
+      <a class="svc" href="/ristrutturazioni-bologna/"><img src="/media/img/pia-11.jpg" alt="Portafinestra sul giardino in una casa ristrutturata" loading="lazy"><div class="txt"><h3>Ristrutturazioni complete</h3><p>Appartamenti e case chiavi in mano: demolizioni, impianti, pavimenti, finiture.</p><span class="more">Scopri di più</span></div></a>
+      <a class="svc" href="/bagni-cucine-bologna/"><img src="/media/img/bagno4-lavabo.jpg" alt="Lavabo d'appoggio su mobile in legno in un bagno rifatto" loading="lazy"><div class="txt"><h3>Bagni e cucine</h3><p>Rifacimento completo o parziale, con impianti nuovi e materiali scelti con te.</p><span class="more">Scopri di più</span></div></a>
+      <a class="svc" href="/tetti-impermeabilizzazioni-bologna/"><img src="/media/img/f08.jpg" alt="Terrazzo rasato e impermeabilizzato" loading="lazy"><div class="txt"><h3>Tetti e impermeabilizzazioni</h3><p>Balconi, terrazze e tetti: guaine, rifacimento coperture e linee vita.</p><span class="more">Scopri di più</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="band navy">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Come lavoriamo</span><h2>Dal sopralluogo alla consegna</h2></div>
+    <ol class="steps">
+      <li><h3>Sopralluogo</h3><p>Veniamo a vedere il lavoro, senza impegno e senza costi.</p></li>
+      <li><h3>Preventivo chiaro</h3><p>Ti diamo un preventivo scritto e dettagliato, voce per voce.</p></li>
+      <li><h3>Lavori</h3><p>Un solo referente segue il cantiere e ti aggiorna sull'avanzamento.</p></li>
+      <li><h3>Consegna</h3><p>Controlliamo insieme il lavoro finito e lasciamo il cantiere pulito.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band white">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Lavori recenti</span><h2>Dal cantiere</h2></div>
+    <div class="gallery">
+      {{ card(lavori | trovaLavoro('pianoro-ristrutturazione-completa'), L, 'it') }}
+      {{ card(lavori | trovaLavoro('bagno-con-lavabo-d-appoggio'), L, 'it') }}
+      {{ card(lavori | trovaLavoro('installazione-linea-vita'), L, 'it') }}
+    </div>
+    <p style="margin-top:24px"><a class="btn btn-ghost" href="/lavori/">Tutti i lavori</a></p>
+  </div>
+</section>
+
+{% if recensioni.elenco.length %}
+<section class="band">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Dicono di noi</span><h2>Recensioni dei clienti</h2></div>
+    <div class="reviews">{% for r in recensioni.elenco %}<blockquote class="review"><span class="stars" aria-label="{{ r.stelle }} stelle su 5">{% for i in range(0, r.stelle) %}★{% endfor %}</span><p>{{ r.testo }}</p><footer>{{ r.nome }}{% if r.luogo %}, {{ r.luogo }}{% endif %}</footer></blockquote>{% endfor %}</div>
+  </div>
+</section>
+{% endif %}

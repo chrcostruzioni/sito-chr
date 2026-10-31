@@ -1,0 +1,35 @@
+---
+layout: base.njk
+lang: en
+permalink: /en/bathrooms-kitchens-bologna/
+alt: /bagni-cucine-bologna/
+title: "Bathroom and kitchen renovation in Bologna | CHR Costruzioni"
+description: "Bathroom and kitchen makeovers in Bologna: new plumbing, shower instead of bathtub, tiles and sanitaryware. Free site visit and quote."
+ogimage: bagno4-dopo.jpg
+---
+{% from "macro.njk" import ba, vid %}
+{% set L = lingue.en %}
+{% set pia = lavori | trovaLavoro('pianoro-ristrutturazione-completa') %}
+{% set bv = lavori | trovaLavoro('bagni-finiti-video') %}
+<div class="wrap page-head"><span class="eyebrow">Services</span><h1>Bathroom and kitchen renovation in Bologna</h1><p class="lead">We redo bathrooms and kitchens, fully or in part, with new plumbing and finishes chosen together with you.</p></div>
+<section class="band white"><div class="wrap split">
+  <div class="stack"><h2>Bathrooms</h2>
+    <ul class="list"><li>Complete makeover or replacing the bathtub with a shower</li><li>New plumbing and drains</li><li>Tiles, wall-hung sanitaryware and vanity units</li><li>Windowless bathrooms</li></ul>
+    <h2 style="margin-top:16px">Kitchens</h2>
+    <ul class="list"><li>Moving water, gas and electrical connections</li><li>Wall tiles and floors</li><li>Preparation and fitting of the kitchen</li></ul>
+    <p><a class="btn btn-primary" href="/en/quote/">Ask for a free quote</a></p>
+  </div>
+  <div class="stack">
+    <div class="duo">{% for v in bv.video %}<figure style="margin:0">{{ vid(v, 'en') }}<figcaption class="cap">{{ v.en }}</figcaption></figure>{% endfor %}</div>
+  </div>
+</div></section>
+<section class="band"><div class="wrap">
+  <div class="head"><span class="eyebrow">Before and after</span><h2>Some bathrooms we have redone</h2></div>
+  <div class="gallery">
+    {% for job in lavori | perCategoria('bagni') %}{% if job.prima %}<div class="stack" style="gap:8px">{{ ba(job, L, 'en') }}<a href="/en/our-work/{{ job.slug }}/" class="cap" style="margin:0">{{ job.titolo_en }}{% if job.luogo %}, {{ job.luogo }}{% endif %}</a></div>{% endif %}{% endfor %}
+  </div>
+</div></section>
+<section class="band white"><div class="wrap split" style="align-items:center">
+  <div class="stack"><span class="eyebrow">Kitchens</span><h2>The Pianoro kitchen</h2><p>Wall tiling, plumbing and kitchen fitting in the house we renovated in Pianoro.</p><p><a class="btn btn-ghost" href="/en/our-work/pianoro-ristrutturazione-completa/">See the project</a></p></div>
+  <figure class="featured-video">{{ vid(pia.video[2], 'en') }}</figure>
+</div></section>

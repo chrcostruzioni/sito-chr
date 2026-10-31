@@ -1,0 +1,18 @@
+{
+  "name": "sito-chr",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.7",
+    "js-yaml": "^4.1.0"
+  }
+}

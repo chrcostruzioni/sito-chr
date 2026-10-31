@@ -1,0 +1,86 @@
+---
+layout: base.njk
+lang: en
+permalink: /en/
+alt: /
+title: "Renovation company in Bologna, free quote | CHR Costruzioni"
+description: "Full renovations, bathrooms, kitchens, roofs and waterproofing in Bologna and its province. Over 12 years of experience. Free site visit and quote. English spoken."
+---
+{% from "macro.njk" import vid, card %}
+{% set L = lingue.en %}
+{% set pia = lavori | trovaLavoro('pianoro-ristrutturazione-completa') %}
+<div class="wrap hero">
+  <div>
+    <span class="eyebrow">Building company in Bologna and its province</span>
+    <h1>Full renovations, done right.</h1>
+    <p class="lead">We renovate houses and apartments, redo bathrooms and kitchens, and waterproof balconies, terraces and roofs. One company that takes care of the job from start to finish, and we speak English.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="/en/quote/">Ask for a free quote</a>
+      <a class="btn btn-ghost" href="/en/our-work/">See our work</a>
+    </div>
+  </div>
+  <figure>
+    <a href="/en/our-work/pianoro-ristrutturazione-completa/"><img src="/media/img/pia-13.jpg" alt="Living room renovated in Pianoro, with herringbone wood floor and French doors onto the garden" width="1400" height="1050"></a>
+    <figcaption>Full renovation, Pianoro (BO)</figcaption>
+  </figure>
+</div>
+
+<div class="facts">
+  <div><strong>Over 12 years</strong><span>of experience in the trade</span></div>
+  <div><strong>Bologna + 20 km</strong><span>the area we cover</span></div>
+  <div><strong>Free</strong><span>site visit and quote</span></div>
+</div>
+
+<section class="band white"><div class="wrap split" style="align-items:center">
+  <div class="stack">
+    <span class="eyebrow">Featured project</span>
+    <h2>Pianoro: a house rebuilt from scratch</h2>
+    <p>{{ pia.descrizione_en }}</p>
+    <p><a class="btn btn-primary" href="/en/our-work/pianoro-ristrutturazione-completa/">See the project</a></p>
+  </div>
+  <figure class="featured-video">{{ vid(pia.video[0], 'en') }}</figure>
+</div></section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">What we do</span><h2>Three kinds of work, one point of contact</h2></div>
+    <div class="services">
+      <a class="svc" href="/en/renovations-bologna/"><img src="/media/img/pia-11.jpg" alt="French door onto the garden in a renovated house" loading="lazy"><div class="txt"><h3>Full renovations</h3><p>Turnkey apartments and houses: demolition, plumbing and wiring, floors, finishes.</p><span class="more">Find out more</span></div></a>
+      <a class="svc" href="/en/bathrooms-kitchens-bologna/"><img src="/media/img/bagno4-lavabo.jpg" alt="Countertop basin on a wooden vanity in a renovated bathroom" loading="lazy"><div class="txt"><h3>Bathrooms and kitchens</h3><p>Complete or partial makeovers, with new plumbing and materials chosen with you.</p><span class="more">Find out more</span></div></a>
+      <a class="svc" href="/en/roofs-waterproofing-bologna/"><img src="/media/img/f08.jpg" alt="Terrace levelled and waterproofed" loading="lazy"><div class="txt"><h3>Roofs and waterproofing</h3><p>Balconies, terraces and roofs: waterproof membranes, roof replacement and fall-protection lines.</p><span class="more">Find out more</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="band navy">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">How we work</span><h2>From site visit to handover</h2></div>
+    <ol class="steps">
+      <li><h3>Site visit</h3><p>We come and see the job, free and with no obligation.</p></li>
+      <li><h3>Clear quote</h3><p>You get a detailed written quote, item by item.</p></li>
+      <li><h3>Works</h3><p>One point of contact runs the site and keeps you updated on progress.</p></li>
+      <li><h3>Handover</h3><p>We check the finished work together and leave the site clean.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band white">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Recent work</span><h2>From the job site</h2></div>
+    <div class="gallery">
+      {{ card(lavori | trovaLavoro('pianoro-ristrutturazione-completa'), L, 'en') }}
+      {{ card(lavori | trovaLavoro('bagno-con-lavabo-d-appoggio'), L, 'en') }}
+      {{ card(lavori | trovaLavoro('installazione-linea-vita'), L, 'en') }}
+    </div>
+    <p style="margin-top:24px"><a class="btn btn-ghost" href="/en/our-work/">All our work</a></p>
+  </div>
+</section>
+
+{% if recensioni.elenco.length %}
+<section class="band">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">What clients say</span><h2>Customer reviews</h2></div>
+    <div class="reviews">{% for r in recensioni.elenco %}<blockquote class="review"><span class="stars" aria-label="{{ r.stelle }} out of 5 stars">{% for i in range(0, r.stelle) %}★{% endfor %}</span><p>{{ r.testo }}</p><footer>{{ r.nome }}{% if r.luogo %}, {{ r.luogo }}{% endif %}</footer></blockquote>{% endfor %}</div>
+  </div>
+</section>
+{% endif %}

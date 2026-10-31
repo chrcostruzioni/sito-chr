@@ -1,0 +1,15 @@
+slug: bagni-finiti-video
+ordine: 9
+categorie: [bagni]
+luogo: ""
+titolo_it: Due bagni finiti, in video
+titolo_en: Two finished bathrooms, on video
+descrizione_it: Un bagno con doccia a filo pavimento e finestra, e un bagno con piastrelle verdi e box doccia.
+descrizione_en: A bathroom with a floor-level shower and window, and a bathroom with green tiles and a shower enclosure.
+copertina: bagno-finestra-poster.jpg
+prima: ""
+dopo: ""
+foto: []
+video:
+  - {file: bagno-finestra.mp4, poster: bagno-finestra-poster.jpg, verticale: true, it: Bagno con doccia a filo pavimento, en: Bathroom with floor-level shower}
+  - {file: bagno-verde.mp4, poster: bagno-verde-poster.jpg, verticale: true, it: Bagno con piastrelle verdi e box doccia, en: Bathroom with green tiles and shower enclosure}

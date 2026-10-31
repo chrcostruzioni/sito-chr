@@ -1,0 +1,26 @@
+slug: pianoro-ristrutturazione-completa
+ordine: 1
+in_evidenza: true
+categorie: [ristrutturazioni, cucine]
+luogo: Pianoro (BO)
+titolo_it: Ristrutturazione completa di una casa a Pianoro
+titolo_en: Full renovation of a house in Pianoro
+descrizione_it: "Un lavoro complesso: abbiamo cambiato tutta la planimetria della casa, trasformato le finestre in portefinestre sul giardino e aperto una nuova porta d'ingresso nel muro portante, con cerchiatura in acciaio. Poi impianti, parquet a spina di pesce, cucina e finiture."
+descrizione_en: "A complex job: we changed the entire floor plan of the house, turned the windows into French doors onto the garden and opened a new front door in the load-bearing wall, with a steel frame. Then the plumbing and wiring, herringbone wood floor, kitchen and finishes."
+copertina: pia-13.jpg
+prima: pia-01.jpg
+dopo: pia-13.jpg
+foto:
+  - {file: pia-02.jpg, it: Demolizioni e smaltimento, en: Demolition and waste removal}
+  - {file: pia-08.jpg, it: Cerchiatura in acciaio nel muro portante, en: Steel frame in the load-bearing wall}
+  - {file: pia-04.jpg, it: Posa del parquet a spina di pesce, en: Laying the herringbone floor}
+  - {file: pia-06.jpg, it: Rivestimento della cucina, en: Kitchen wall tiling}
+  - {file: pia-09.jpg, it: Montaggio della cucina, en: Kitchen fitting}
+  - {file: pia-07.jpg, it: Nuove portefinestre sul giardino, en: New French doors onto the garden}
+  - {file: pia-10.jpg, it: Pedana in legno sul giardino, en: Wooden deck in the garden}
+  - {file: pia-11.jpg, it: Dal soggiorno al giardino, en: From the living room to the garden}
+  - {file: pia-14.jpg, it: Corridoio e porte nuove, en: Hallway and new doors}
+video:
+  - {file: pianoro-soggiorno.mp4, poster: pianoro-soggiorno-poster.jpg, verticale: true, it: "Zona giorno finita: cucina, pranzo e soggiorno", en: "Finished living area: kitchen, dining and living room"}
+  - {file: posa-spina-pesce.mp4, poster: posa-spina-pesce-poster.jpg, verticale: false, it: La squadra al lavoro sulla spina di pesce, en: The team laying the herringbone floor}
+  - {file: pianoro-cucina.mp4, poster: pianoro-cucina-poster.jpg, verticale: true, it: "Cucina, zona pranzo e nuova porta d'ingresso", en: Kitchen, dining area and new front door}

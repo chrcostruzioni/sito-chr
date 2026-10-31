@@ -1,0 +1,41 @@
+---
+layout: base.njk
+lang: en
+permalink: /en/renovations-bologna/
+alt: /ristrutturazioni-bologna/
+title: "Apartment and house renovation in Bologna | CHR Costruzioni"
+description: "Turnkey renovations in Bologna: demolition, plumbing and wiring, floors, new openings and finishes. Free quote and one point of contact from start to finish."
+ogimage: pia-13.jpg
+---
+{% from "macro.njk" import ba, vid %}
+{% set L = lingue.en %}
+{% set pia = lavori | trovaLavoro('pianoro-ristrutturazione-completa') %}
+<div class="wrap page-head"><span class="eyebrow">Services</span><h1>Full renovations in Bologna</h1><p class="lead">We renovate apartments and houses on a turnkey basis. We handle all the work and the coordination, and you have one point of contact from start to finish.</p></div>
+<section class="band white"><div class="wrap split">
+  <div class="stack"><h2>What's included</h2>
+    <ul class="list">
+      <li>Demolition, waste removal and new partition walls</li>
+      <li>New electrical and plumbing systems</li>
+      <li>Screeds, floors and wall tiling</li>
+      <li>Plasterboard, false ceilings, skimming and painting</li>
+      <li>Complete bathrooms and kitchens</li>
+      <li>New room layouts, even changing the entire floor plan</li>
+      <li>New openings in load-bearing walls, with steel frames</li>
+      <li>Windows turned into French doors</li>
+      <li>Wood floors, including herringbone</li>
+      <li>New windows and outdoor wooden decks</li>
+      <li>Help with paperwork and tax deductions</li>
+    </ul>
+    <p>Every home is different, so we always start with a site visit and give you a free, tailored quote.</p>
+    <p><a class="btn btn-primary" href="/en/quote/">Ask for a free quote</a></p>
+  </div>
+  <div class="stack">{{ ba(pia, L, 'en') }}<p class="cap">Full renovation of a house in Pianoro (BO): new floor plan, windows turned into French doors and a new front door opened in the load-bearing wall.</p></div>
+</div></section>
+<section class="band"><div class="wrap">
+  <div class="head"><span class="eyebrow">One job from start to finish</span><h2>Pianoro: the stages of the work</h2><p>{{ pia.descrizione_en }}</p></div>
+  <div class="gallery">
+    {% for f in pia.foto %}<figure><img src="{{ f.file | img }}" alt="{{ f.en }}" loading="lazy"><figcaption>{{ f.en }}</figcaption></figure>{% endfor %}
+    <figure>{{ vid(pia.video[1], 'en', 'v43') }}<figcaption>{{ pia.video[1].en }}</figcaption></figure>
+  </div>
+  <p style="margin-top:24px"><a class="btn btn-ghost" href="/en/our-work/pianoro-ristrutturazione-completa/">All photos and videos from Pianoro</a></p>
+</div></section>

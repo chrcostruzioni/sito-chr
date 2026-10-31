@@ -1,0 +1,37 @@
+---
+layout: base.njk
+lang: it
+permalink: /preventivo/
+alt: /en/quote/
+nocta: true
+title: "Preventivo gratuito per ristrutturazioni a Bologna | CHR Costruzioni"
+description: "Raccontaci il lavoro che hai in mente: ti richiamiamo per un sopralluogo gratuito e un preventivo scritto, voce per voce."
+---
+{% set I = impresa %}
+<div class="wrap page-head"><span class="eyebrow">Contatti</span><h1>Richiedi un preventivo gratuito</h1><p class="lead">Raccontaci il lavoro che hai in mente. Ti richiamiamo per fissare un sopralluogo, senza impegno.</p></div>
+<section class="band white"><div class="wrap split">
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="{{ I.web3forms_key }}">
+    <input type="hidden" name="subject" value="Nuova richiesta di preventivo dal sito">
+    <input type="hidden" name="from_name" value="Sito CHR Costruzioni">
+    <input type="hidden" name="redirect" value="{{ I.dominio }}/grazie/">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label>Nome e cognome<input name="Nome" autocomplete="name" required></label>
+    <label>Telefono<input name="Telefono" type="tel" autocomplete="tel" required></label>
+    <label class="full">Email<input name="email" type="email" autocomplete="email"></label>
+    <label>Tipo di lavoro<select name="Tipo di lavoro"><option>Ristrutturazione completa</option><option>Bagno o cucina</option><option>Tetto</option><option>Balcone o terrazza</option><option>Linea vita</option><option>Altro</option></select></label>
+    <label>Comune<input name="Comune" placeholder="Es. Casalecchio di Reno"></label>
+    <label class="full">Descrizione del lavoro<textarea name="Descrizione" placeholder="Es. bagno di 6 mq da rifare completamente, vasca da sostituire con doccia" required></textarea></label>
+    <p class="full cap" style="margin:0">Hai delle foto? Mandacele su <a href="https://wa.me/{{ I.whatsapp }}">WhatsApp</a> dopo aver inviato la richiesta.</p>
+    <label class="check full"><input type="checkbox" name="Privacy" value="Accettata" required> <span>Ho letto l'<a href="/privacy/">informativa privacy</a> e accetto di essere ricontattato.</span></label>
+    <button class="btn btn-primary full" type="submit">Invia la richiesta</button>
+  </form>
+  <aside class="contact-card">
+    <strong>Preferisci parlare subito?</strong>
+    <p>Telefono e WhatsApp<br><a href="tel:{{ I.telefono_link }}"><strong style="font-size:1.3rem">{{ I.telefono }}</strong></a></p>
+    <p>Orari<br><strong>{{ I.orari_it }}</strong></p>
+    <p>Instagram<br><a href="https://www.instagram.com/{{ I.instagram }}/"><strong>@{{ I.instagram }}</strong></a></p>
+    <p>Zona di lavoro<br><strong>Bologna e comuni nel raggio di circa 20 km</strong></p>
+    <p class="cap" style="margin:0">{{ I.ragione_sociale }} · P.IVA {{ I.piva }}</p>
+  </aside>
+</div></section>

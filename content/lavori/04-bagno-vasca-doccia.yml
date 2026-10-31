@@ -1,0 +1,14 @@
+slug: bagno-vasca-sostituita-con-doccia
+ordine: 4
+categorie: [bagni]
+luogo: ""
+titolo_it: Vasca sostituita con una doccia a filo pavimento
+titolo_en: Bathtub replaced with a floor-level shower
+descrizione_it: Al posto della vasca una doccia a filo pavimento, con sanitari nuovi.
+descrizione_en: A floor-level shower in place of the bathtub, with new sanitaryware.
+copertina: bagno3-dopo.jpg
+prima: bagno3-prima.jpg
+dopo: bagno3-dopo.jpg
+foto:
+  - {file: bagno3-dettaglio.jpg, it: Sanitari nuovi accanto alla finestra, en: New sanitaryware next to the window}
+video: []

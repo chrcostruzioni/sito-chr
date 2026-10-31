@@ -1,0 +1,14 @@
+slug: bagno-cieco-senza-finestra
+ordine: 6
+categorie: [bagni]
+luogo: ""
+titolo_it: Bagno cieco, senza finestra, rifatto da capo
+titolo_en: Windowless bathroom redone from scratch
+descrizione_it: Sanitari sospesi, mobile nuovo e doccia in muratura con scaldasalviette.
+descrizione_en: Wall-hung sanitaryware, a new vanity and a built-in shower with towel warmer.
+copertina: bagno5-dopo.jpg
+prima: bagno5-prima.jpg
+dopo: bagno5-dopo.jpg
+foto:
+  - {file: bagno5-doccia.jpg, it: Doccia e scaldasalviette, en: Shower and towel warmer}
+video: []

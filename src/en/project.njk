@@ -1,0 +1,23 @@
+---
+layout: base.njk
+lang: en
+pagination:
+  data: lavori
+  size: 1
+  alias: job
+permalink: "/en/our-work/{{ job.slug }}/"
+eleventyComputed:
+  title: "{{ job.titolo_en }} | CHR Costruzioni"
+  description: "{{ job.descrizione_en | truncate(150) }}"
+  alt: "/lavori/{{ job.slug }}/"
+  ogimage: "{{ job.copertina }}"
+---
+{% from "macro.njk" import ba, vid %}
+{% set L = lingue.en %}
+<div class="wrap page-head"><span class="eyebrow">{% for c in job.categorie %}{{ L.cat[c] }}{% if not loop.last %} · {% endif %}{% endfor %}{% if job.luogo %} · {{ job.luogo }}{% endif %}</span><h1>{{ job.titolo_en }}</h1><p class="lead">{{ job.descrizione_en }}</p></div>
+<section class="band white"><div class="wrap stack" style="gap:32px">
+  {% if job.prima and job.dopo %}<div style="max-width:760px">{{ ba(job, L, 'en') }}</div>{% endif %}
+  {% if job.video.length %}<div class="gallery">{% for v in job.video %}<figure>{{ vid(v, 'en') }}<figcaption>{{ v.en }}</figcaption></figure>{% endfor %}</div>{% endif %}
+  {% if job.foto.length %}<div class="gallery">{% for f in job.foto %}<figure><img src="{{ f.file | img }}" alt="{{ f.en }}" loading="lazy"><figcaption>{{ f.en }}</figcaption></figure>{% endfor %}</div>{% endif %}
+  <p><a class="btn btn-primary" href="/en/quote/">Want something similar? Free quote</a> <a class="btn btn-ghost" href="/en/our-work/">{{ L.torna_lavori }}</a></p>
+</div></section>

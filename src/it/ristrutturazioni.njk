@@ -1,0 +1,41 @@
+---
+layout: base.njk
+lang: it
+permalink: /ristrutturazioni-bologna/
+alt: /en/renovations-bologna/
+title: "Ristrutturazione appartamenti e case a Bologna | CHR Costruzioni"
+description: "Ristrutturazioni chiavi in mano a Bologna e provincia: demolizioni, impianti, pavimenti, nuove aperture e finiture. Preventivo gratuito e un solo referente."
+ogimage: pia-13.jpg
+---
+{% from "macro.njk" import ba, vid, card %}
+{% set L = lingue.it %}
+{% set pia = lavori | trovaLavoro('pianoro-ristrutturazione-completa') %}
+<div class="wrap page-head"><span class="eyebrow">Servizi</span><h1>Ristrutturazioni complete a Bologna</h1><p class="lead">Ristrutturiamo appartamenti e case chiavi in mano. Ci occupiamo noi di tutte le lavorazioni e del coordinamento, tu hai un solo referente dall'inizio alla fine.</p></div>
+<section class="band white"><div class="wrap split">
+  <div class="stack"><h2>Cosa comprende</h2>
+    <ul class="list">
+      <li>Demolizioni, smaltimento e nuove tramezze</li>
+      <li>Impianti elettrici e idraulici nuovi</li>
+      <li>Massetti, pavimenti e rivestimenti</li>
+      <li>Cartongesso, controsoffitti, rasature e tinteggiature</li>
+      <li>Bagno e cucina completi</li>
+      <li>Nuova distribuzione degli spazi, anche cambiando tutta la planimetria</li>
+      <li>Nuove aperture nei muri portanti, con cerchiature in acciaio</li>
+      <li>Finestre trasformate in portefinestre</li>
+      <li>Pavimenti in legno, anche a spina di pesce</li>
+      <li>Nuovi infissi e pedane esterne in legno</li>
+      <li>Supporto per pratiche e detrazioni fiscali</li>
+    </ul>
+    <p>Ogni casa è diversa: per questo partiamo sempre da un sopralluogo e ti diamo un preventivo gratuito su misura.</p>
+    <p><a class="btn btn-primary" href="/preventivo/">Richiedi un preventivo gratuito</a></p>
+  </div>
+  <div class="stack">{{ ba(pia, L, 'it') }}<p class="cap">Ristrutturazione completa di una casa a Pianoro (BO): planimetria rifatta, finestre trasformate in portefinestre e nuova porta d'ingresso aperta nel muro portante.</p></div>
+</div></section>
+<section class="band"><div class="wrap">
+  <div class="head"><span class="eyebrow">Un cantiere dall'inizio alla fine</span><h2>Pianoro: le fasi del lavoro</h2><p>{{ pia.descrizione_it }}</p></div>
+  <div class="gallery">
+    {% for f in pia.foto %}<figure><img src="{{ f.file | img }}" alt="{{ f.it }}" loading="lazy"><figcaption>{{ f.it }}</figcaption></figure>{% endfor %}
+    <figure>{{ vid(pia.video[1], 'it', 'v43') }}<figcaption>{{ pia.video[1].it }}</figcaption></figure>
+  </div>
+  <p style="margin-top:24px"><a class="btn btn-ghost" href="/lavori/pianoro-ristrutturazione-completa/">Tutte le foto e i video di Pianoro</a></p>
+</div></section>

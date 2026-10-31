@@ -1,0 +1,35 @@
+---
+layout: base.njk
+lang: it
+permalink: /bagni-cucine-bologna/
+alt: /en/bathrooms-kitchens-bologna/
+title: "Bagno e cucina a Bologna: preventivo gratuito | CHR Costruzioni"
+description: "Rifacimento bagni e cucine a Bologna: impianti nuovi, doccia al posto della vasca, piastrelle e sanitari. Sopralluogo e preventivo gratuiti."
+ogimage: bagno4-dopo.jpg
+---
+{% from "macro.njk" import ba, vid, card %}
+{% set L = lingue.it %}
+{% set pia = lavori | trovaLavoro('pianoro-ristrutturazione-completa') %}
+{% set bv = lavori | trovaLavoro('bagni-finiti-video') %}
+<div class="wrap page-head"><span class="eyebrow">Servizi</span><h1>Ristrutturazione bagni e cucine a Bologna</h1><p class="lead">Rifacciamo bagni e cucine, completi o in parte, con impianti nuovi e finiture scelte insieme a te.</p></div>
+<section class="band white"><div class="wrap split">
+  <div class="stack"><h2>Bagni</h2>
+    <ul class="list"><li>Rifacimento completo o sostituzione della vasca con doccia</li><li>Impianto idraulico nuovo e scarichi</li><li>Piastrelle, sanitari sospesi e mobili</li><li>Bagni ciechi, senza finestra</li></ul>
+    <h2 style="margin-top:16px">Cucine</h2>
+    <ul class="list"><li>Spostamento di attacchi acqua, gas e prese</li><li>Rivestimenti e pavimenti</li><li>Predisposizione e montaggio della cucina</li></ul>
+    <p><a class="btn btn-primary" href="/preventivo/">Richiedi un preventivo gratuito</a></p>
+  </div>
+  <div class="stack">
+    <div class="duo">{% for v in bv.video %}<figure style="margin:0">{{ vid(v, 'it') }}<figcaption class="cap">{{ v.it }}</figcaption></figure>{% endfor %}</div>
+  </div>
+</div></section>
+<section class="band"><div class="wrap">
+  <div class="head"><span class="eyebrow">Prima e dopo</span><h2>Alcuni bagni che abbiamo rifatto</h2></div>
+  <div class="gallery">
+    {% for job in lavori | perCategoria('bagni') %}{% if job.prima %}<div class="stack" style="gap:8px">{{ ba(job, L, 'it') }}<a href="/lavori/{{ job.slug }}/" class="cap" style="margin:0">{{ job.titolo_it }}{% if job.luogo %}, {{ job.luogo }}{% endif %}</a></div>{% endif %}{% endfor %}
+  </div>
+</div></section>
+<section class="band white"><div class="wrap split" style="align-items:center">
+  <div class="stack"><span class="eyebrow">Cucine</span><h2>La cucina di Pianoro</h2><p>Rivestimento, impianti e montaggio della cucina nella casa che abbiamo ristrutturato a Pianoro.</p><p><a class="btn btn-ghost" href="/lavori/pianoro-ristrutturazione-completa/">Guarda il lavoro</a></p></div>
+  <figure class="featured-video">{{ vid(pia.video[2], 'it') }}</figure>
+</div></section>

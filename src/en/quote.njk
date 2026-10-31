@@ -1,0 +1,37 @@
+---
+layout: base.njk
+lang: en
+permalink: /en/quote/
+alt: /preventivo/
+nocta: true
+title: "Free renovation quote in Bologna | CHR Costruzioni"
+description: "Tell us about your project: we will call you back to arrange a free site visit and a detailed written quote."
+---
+{% set I = impresa %}
+<div class="wrap page-head"><span class="eyebrow">Contact</span><h1>Ask for a free quote</h1><p class="lead">Tell us about the job you have in mind. We will call you back to arrange a site visit, with no obligation. We speak English.</p></div>
+<section class="band white"><div class="wrap split">
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="{{ I.web3forms_key }}">
+    <input type="hidden" name="subject" value="New quote request from the website (English)">
+    <input type="hidden" name="from_name" value="Sito CHR Costruzioni">
+    <input type="hidden" name="redirect" value="{{ I.dominio }}/en/thank-you/">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label>Full name<input name="Nome" autocomplete="name" required></label>
+    <label>Phone<input name="Telefono" type="tel" autocomplete="tel" required></label>
+    <label class="full">Email<input name="email" type="email" autocomplete="email"></label>
+    <label>Type of work<select name="Tipo di lavoro"><option>Full renovation</option><option>Bathroom or kitchen</option><option>Roof</option><option>Balcony or terrace</option><option>Fall-protection line</option><option>Other</option></select></label>
+    <label>Town<input name="Comune" placeholder="E.g. Casalecchio di Reno"></label>
+    <label class="full">Job description<textarea name="Descrizione" placeholder="E.g. 6 m² bathroom to redo completely, bathtub to replace with a shower" required></textarea></label>
+    <p class="full cap" style="margin:0">Have photos? Send them on <a href="https://wa.me/{{ I.whatsapp }}">WhatsApp</a> after sending your request.</p>
+    <label class="check full"><input type="checkbox" name="Privacy" value="Accepted" required> <span>I have read the <a href="/en/privacy/">privacy notice</a> and agree to be contacted.</span></label>
+    <button class="btn btn-primary full" type="submit">Send request</button>
+  </form>
+  <aside class="contact-card">
+    <strong>Prefer to talk now?</strong>
+    <p>Phone and WhatsApp<br><a href="tel:{{ I.telefono_link }}"><strong style="font-size:1.3rem">{{ I.telefono }}</strong></a></p>
+    <p>Hours<br><strong>{{ I.orari_en }}</strong></p>
+    <p>Instagram<br><a href="https://www.instagram.com/{{ I.instagram }}/"><strong>@{{ I.instagram }}</strong></a></p>
+    <p>Area we cover<br><strong>Bologna and towns within about 20 km</strong></p>
+    <p class="cap" style="margin:0">{{ I.ragione_sociale }} · VAT no. {{ I.piva }}</p>
+  </aside>
+</div></section>

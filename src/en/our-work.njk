@@ -1,0 +1,14 @@
+---
+layout: base.njk
+lang: en
+permalink: /en/our-work/
+alt: /lavori/
+title: "Our work in Bologna and province | CHR Costruzioni"
+description: "Photos and videos of our jobs: full renovations in Pianoro, bathrooms in Bologna and Medicina, roofs, terraces and fall-protection lines."
+---
+{% from "macro.njk" import card %}
+{% set L = lingue.en %}
+<div class="wrap page-head"><span class="eyebrow">Portfolio</span><h1>Our work</h1><p class="lead">Some recent jobs in Bologna and its province. Open a project to see all its photos and videos.</p></div>
+<section class="band white"><div class="wrap">
+  <div class="gallery">{% for job in lavori %}{{ card(job, L, 'en') }}{% endfor %}</div>
+</div></section>

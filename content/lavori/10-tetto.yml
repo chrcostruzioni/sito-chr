@@ -1,0 +1,14 @@
+slug: rifacimento-tetto
+ordine: 10
+categorie: [tetti]
+luogo: ""
+titolo_it: Rifacimento di un tetto in coppi
+titolo_en: Clay-tile roof replacement
+descrizione_it: Rimozione dei vecchi coppi, posa della guaina e rimontaggio della copertura, con camini e lattonerie sistemati.
+descrizione_en: Removal of the old tiles, laying the membrane and refitting the roof, with chimneys and flashing put right.
+copertina: f01.jpg
+prima: f03.jpg
+dopo: f01.jpg
+foto:
+  - {file: f02.jpg, it: Guaina posata prima dei coppi, en: Membrane laid before the tiles}
+video: []

@@ -1,0 +1,14 @@
+---
+layout: base.njk
+lang: it
+permalink: /lavori/
+alt: /en/our-work/
+title: "Lavori realizzati a Bologna e provincia | CHR Costruzioni"
+description: "Foto e video dei nostri cantieri: ristrutturazioni complete a Pianoro, bagni a Bologna e Medicina, tetti, terrazzi e linee vita."
+---
+{% from "macro.njk" import card %}
+{% set L = lingue.it %}
+<div class="wrap page-head"><span class="eyebrow">Portfolio</span><h1>Lavori realizzati</h1><p class="lead">Alcuni cantieri recenti a Bologna e provincia. Apri un lavoro per vedere tutte le foto e i video.</p></div>
+<section class="band white"><div class="wrap">
+  <div class="gallery">{% for job in lavori %}{{ card(job, L, 'it') }}{% endfor %}</div>
+</div></section>

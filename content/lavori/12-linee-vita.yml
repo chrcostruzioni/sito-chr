@@ -1,0 +1,15 @@
+slug: installazione-linea-vita
+ordine: 12
+categorie: [linee-vita]
+luogo: ""
+titolo_it: Installazione di una linea vita sul tetto
+titolo_en: Fall-protection line installed on a roof
+descrizione_it: Sistema anticaduta montato in copertura, per lavorare sul tetto in sicurezza.
+descrizione_en: Fall-protection system fitted on the roof, so people can work on it safely.
+copertina: f05.jpg
+prima: ""
+dopo: ""
+foto:
+  - {file: f05.jpg, it: Linea vita installata, en: Fall-protection line installed}
+  - {file: f06.jpg, it: Componenti prima del montaggio, en: Components before fitting}
+video: []
