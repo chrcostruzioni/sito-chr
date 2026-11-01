@@ -57,7 +57,7 @@ html[lang="it"] .lang [data-l="it"],html[lang="en"] .lang [data-l="en"]{opacity:
 .hero p.lead{font-size:1.15rem;color:var(--muted)}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
 .hero figure{margin:0;position:relative}
-.hero figure img{aspect-ratio:4/3;object-fit:cover;width:100%;border-radius:4px}
+.hero figure img{aspect-ratio:4/3;object-fit:cover;width:100%;height:auto;border-radius:4px}
 .hero figcaption{position:absolute;left:12px;bottom:12px;background:rgba(21,51,76,.88);color:#fff;font-size:.8rem;padding:6px 10px;border-radius:3px}
 @media (max-width:800px){.hero{grid-template-columns:1fr;padding-block:32px;gap:28px}}
 
