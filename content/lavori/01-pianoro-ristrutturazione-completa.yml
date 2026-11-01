@@ -22,6 +22,7 @@ foto:
   - {file: pia-14.jpg, it: Corridoio e porte nuove, en: Hallway and new doors}
   - {file: pia-12.jpg, it: "La casa finita, già abitata", en: "The finished house, already lived in"}
 video:
+  - {file: pianoro-prima-dopo.mp4, poster: pianoro-prima-dopo-poster.jpg, verticale: true, it: "Prima e dopo: dalla demolizione alla casa finita", en: "Before and after: from demolition to the finished home"}
   - {file: pianoro-soggiorno.mp4, poster: pianoro-soggiorno-poster.jpg, verticale: true, it: "Zona giorno finita: cucina, pranzo e soggiorno", en: "Finished living area: kitchen, dining and living room"}
   - {file: posa-spina-pesce.mp4, poster: posa-spina-pesce-poster.jpg, verticale: false, it: La squadra al lavoro sulla spina di pesce, en: The team laying the herringbone floor}
   - {file: pianoro-cucina.mp4, poster: pianoro-cucina-poster.jpg, verticale: true, it: "Cucina, zona pranzo e nuova porta d'ingresso", en: Kitchen, dining area and new front door}
