@@ -1,0 +1,7 @@
+<section class="band white" id="domande">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">{{ faq_eyebrow }}</span><h2>{{ faq_title }}</h2></div>
+    <div class="faq">{% for q in faq %}<details><summary>{{ q.d }}</summary><p>{{ q.r | safe }}</p></details>{% endfor %}</div>
+  </div>
+</section>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for q in faq %}{"@type":"Question","name":{{ q.d | json | safe }},"acceptedAnswer":{"@type":"Answer","text":{{ q.r | striptags | json | safe }}}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>

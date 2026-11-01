@@ -3,6 +3,7 @@ layout: base.njk
 lang: en
 permalink: /en/
 alt: /
+ogimage: hero-pianoro.jpg
 title: "Renovation company in Bologna, free quote | CHR Costruzioni"
 description: "Full renovations, bathrooms, kitchens, roofs and waterproofing in Bologna and its province. Over 12 years of experience. Free site visit and quote. English spoken."
 ---
@@ -99,3 +100,6 @@ description: "Full renovations, bathrooms, kitchens, roofs and waterproofing in 
   </div>
 </section>
 {% endif %}
+
+{% set faq = domande.en %}{% set faq_eyebrow = "FAQ" %}{% set faq_title = "Questions we are often asked" %}
+{% include "domande.njk" %}

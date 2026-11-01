@@ -3,7 +3,8 @@ layout: base.njk
 lang: it
 permalink: /
 alt: /en/
-title: "Impresa edile Bologna: ristrutturazioni, preventivo gratuito | CHR Costruzioni"
+ogimage: hero-pianoro.jpg
+title: "Impresa edile a Bologna, preventivo gratuito | CHR Costruzioni"
 description: "Ristrutturazioni complete, bagni, cucine, tetti e impermeabilizzazioni a Bologna e provincia. Oltre 12 anni di esperienza. Sopralluogo e preventivo gratuiti."
 ---
 {% from "macro.njk" import vid, card %}
@@ -99,3 +100,6 @@ description: "Ristrutturazioni complete, bagni, cucine, tetti e impermeabilizzaz
   </div>
 </section>
 {% endif %}
+
+{% set faq = domande.it %}{% set faq_eyebrow = "Domande frequenti" %}{% set faq_title = "Le domande che ci fanno più spesso" %}
+{% include "domande.njk" %}

@@ -158,3 +158,10 @@ video{width:100%;object-fit:cover;border-radius:4px;display:block;background:#E5
 .filters a{font-size:.9rem;font-weight:700;text-decoration:none;color:var(--navy);border:1px solid var(--line);border-radius:20px;padding:6px 14px;background:var(--paper)}
 .filters a[aria-current]{background:var(--navy);color:#fff;border-color:var(--navy)}
 .hp{position:absolute;left:-9999px}
+.faq{max-width:760px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 36px 18px 0;font-weight:700;color:var(--navy);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--blue)}
+.faq details[open] summary::after{content:"−"}
+.faq details p{margin:0 0 18px;color:var(--muted)}

@@ -1,0 +1,20 @@
+{
+  "it": [
+    {"d": "Il sopralluogo e il preventivo si pagano?", "r": "No, sono gratuiti e senza impegno. Veniamo a vedere il lavoro e poi ti diamo un preventivo scritto, voce per voce."},
+    {"d": "In che zona lavorate?", "r": "A Bologna e in tutta la provincia."},
+    {"d": "Quanto tempo serve per rifare un bagno o ristrutturare casa?", "r": "Dipende da cosa c'è da fare. Dopo il sopralluogo scriviamo nel preventivo anche i tempi previsti, così sai fin dall'inizio quando sarà pronto."},
+    {"d": "Servono permessi per i lavori?", "r": "Per lavori come spostare pareti o aprire nuove porte di solito serve una pratica edilizia (per esempio la CILA), presentata da un tecnico. Per rifare pavimenti, piastrelle o sanitari di solito no. Al sopralluogo ti diciamo cosa serve nel tuo caso."},
+    {"d": "Posso usare il bonus ristrutturazione?", "r": "Molti lavori di ristrutturazione si possono detrarre, se paghi con bonifico parlante. Ti aiutiamo con fatture e documenti. Trovi i dettagli nella pagina <a href=\"/bonus-detrazioni/\">Bonus e detrazioni</a>."},
+    {"d": "Parlate inglese?", "r": "Sì. Se ti trovi meglio, ti seguiamo in inglese dal sopralluogo alla consegna."},
+    {"d": "Come chiedo un preventivo?", "r": "Compila il <a href=\"/preventivo/\">modulo preventivo</a>, chiamaci o scrivici su WhatsApp al 324 568 9619, dal lunedì al venerdì dalle 9 alle 18."}
+  ],
+  "en": [
+    {"d": "Do I pay for the site visit and the quote?", "r": "No, both are free and with no obligation. We come and see the job, then give you a detailed written quote."},
+    {"d": "Which area do you cover?", "r": "Bologna and its whole province."},
+    {"d": "How long does a bathroom or a full renovation take?", "r": "It depends on the work. After the site visit we put the expected timing in the quote, so you know from the start when it will be ready."},
+    {"d": "Do I need permits?", "r": "For work such as moving walls or opening new doorways you usually need a building notice (for example a CILA), filed by a qualified technician. For new floors, tiles or sanitaryware you usually don't. At the site visit we tell you what your case needs."},
+    {"d": "Can I use the Italian renovation tax bonus?", "r": "Many renovation works are tax deductible if you pay by the special bank transfer for tax bonuses. We help with invoices and paperwork. See <a href=\"/en/tax-bonuses/\">Tax bonuses</a> for details."},
+    {"d": "Do you speak English?", "r": "Yes. We can look after you in English from the first site visit to handover."},
+    {"d": "How do I ask for a quote?", "r": "Fill in the <a href=\"/en/quote/\">quote form</a>, call us or message us on WhatsApp at +39 324 568 9619, Monday to Friday, 9am to 6pm."}
+  ]
+}
