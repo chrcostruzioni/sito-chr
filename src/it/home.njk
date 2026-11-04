@@ -92,11 +92,12 @@ description: "Ristrutturazioni complete, bagni, cucine, tetti e impermeabilizzaz
   </div>
 </div></section>
 
-{% if recensioni.elenco.length %}
+{% if recensioni.elenco.length or impresa.google_recensioni %}
 <section class="band">
   <div class="wrap">
     <div class="head"><span class="eyebrow">Dicono di noi</span><h2>Recensioni dei clienti</h2></div>
     <div class="reviews">{% for r in recensioni.elenco %}<blockquote class="review"><span class="stars" aria-label="{{ r.stelle }} stelle su 5">{% for i in range(0, r.stelle) %}★{% endfor %}</span><p>{{ r.testo }}</p><footer>{{ r.nome }}{% if r.luogo %}, {{ r.luogo }}{% endif %}</footer></blockquote>{% endfor %}</div>
+    {% if impresa.google_recensioni %}<p class="reviews-google"><a class="btn btn-ghost" href="{{ impresa.google_recensioni }}" target="_blank" rel="noopener">Leggi tutte le recensioni su Google</a></p>{% endif %}
   </div>
 </section>
 {% endif %}

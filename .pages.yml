@@ -68,6 +68,7 @@ content:
       - { name: email, label: Email, type: string }
       - { name: instagram, label: Nome Instagram (senza @), type: string }
       - { name: facebook, label: "Indirizzo pagina Facebook (facoltativo)", type: string }
+      - { name: google_recensioni, label: "Link alle recensioni Google (facoltativo)", type: string }
       - { name: orari_it, label: Orari (italiano), type: string }
       - { name: orari_en, label: Orari (inglese), type: string }
       - { name: nome, label: Nome, type: string }
