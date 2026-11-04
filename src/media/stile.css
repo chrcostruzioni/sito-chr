@@ -96,7 +96,7 @@ section.band.navy .eyebrow{color:#9DC0E0}
 .gallery figcaption{font-size:.9rem;color:var(--muted)}
 .tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);background:#E3ECF5;padding:2px 8px;border-radius:3px;margin-right:6px}
 
-.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 .reviews .ph{min-height:150px}
 @media (max-width:900px){.reviews{grid-template-columns:1fr}}
 

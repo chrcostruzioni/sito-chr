@@ -1,3 +1,28 @@
 {
-  "elenco": []
+  "elenco": [
+    {
+      "nome": "Salvatore T.",
+      "luogo": "",
+      "stelle": 5,
+      "testo": "Mi sono rivolto a CHR Costruzioni per il rifacimento del bagno... Altamente soddisfatto, presenti e cortesi anche nel post lavori. Lavoro fatto con qualità e precisione. Siamo rimasti così soddisfatti che ci siamo rivolti a loro per altre tipologie di lavoro che vogliamo fare."
+    },
+    {
+      "nome": "Yuliya G.",
+      "luogo": "",
+      "stelle": 5,
+      "testo": "Sono rimasta davvero molto soddisfatta del lavoro svolto! Ho trovato grande professionalità, serietà e attenzione ai dettagli. I lavori sono stati eseguiti con cura e nei tempi concordati, rispettando le mie aspettative. Ottima disponibilità e gentilezza durante tutto il percorso. Consiglio vivamente questa impresa a chi cerca qualità, affidabilità e competenza. Grazie per l’ottimo lavoro!"
+    },
+    {
+      "nome": "Lia P.",
+      "luogo": "",
+      "stelle": 5,
+      "testo": "Un’impresa edile seria e affidabile, composta da lavoratori davvero competenti e professionali. Sono molto bravi, precisi e attenti a ogni dettaglio, lavorano con cura e passione e hanno un ottimo occhio estetico, riuscendo a coniugare funzionalità e gusto. Si vede la qualità del loro lavoro e la grande attenzione che dedicano a ogni progetto. Assolutamente consigliati!"
+    },
+    {
+      "nome": "Angela F.",
+      "luogo": "",
+      "stelle": 5,
+      "testo": "Impresa seria e affidabile, con grande professionalità e attenzione alle esigenze del cliente. Ottima esperienza nei lavori di ristrutturazione, rifacimento bagni e opere di muratura. Precisione, cura dei dettagli e disponibilità in ogni fase dei lavori. Consigliatissimi!"
+    }
+  ]
 }

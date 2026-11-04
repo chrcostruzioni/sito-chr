@@ -95,7 +95,7 @@ description: "Full renovations, bathrooms, kitchens, roofs and waterproofing in 
 {% if recensioni.elenco.length or impresa.google_recensioni %}
 <section class="band">
   <div class="wrap">
-    <div class="head"><span class="eyebrow">What clients say</span><h2>Customer reviews</h2></div>
+    <div class="head"><span class="eyebrow">What clients say</span><h2>Customer reviews</h2><p>Our Google reviews, in the original Italian.</p></div>
     <div class="reviews">{% for r in recensioni.elenco %}<blockquote class="review"><span class="stars" aria-label="{{ r.stelle }} out of 5 stars">{% for i in range(0, r.stelle) %}★{% endfor %}</span><p>{{ r.testo }}</p><footer>{{ r.nome }}{% if r.luogo %}, {{ r.luogo }}{% endif %}</footer></blockquote>{% endfor %}</div>
     {% if impresa.google_recensioni %}<p class="reviews-google"><a class="btn btn-ghost" href="{{ impresa.google_recensioni }}" target="_blank" rel="noopener">Read all our reviews on Google</a></p>{% endif %}
   </div>
