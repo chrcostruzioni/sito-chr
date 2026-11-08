@@ -192,3 +192,30 @@ video{width:100%;object-fit:cover;border-radius:4px;display:block;background:#E5
   .wa{display:none}
   body{padding-bottom:calc(56px + env(safe-area-inset-bottom,0px))}
 }
+
+/* Versione telefono piu compatta, come piace a Ion (stile app) */
+@media (max-width:800px){
+  section.band{padding-block:32px}
+  .head{margin-bottom:18px;gap:6px}
+  h1{font-size:1.9rem}
+  h2{font-size:1.5rem}
+  .stack{gap:12px}
+  .btn{min-height:46px;padding:0 16px;font-size:.95rem}
+  .hero .ctas{gap:8px}
+  .ticks{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px}
+  .ticks li{font-size:.84rem;gap:6px;align-items:flex-start}
+  .ticks li::before{width:18px;height:18px;font-size:.68rem;margin-top:2px}
+  .steps{gap:14px}
+  .steps li{display:grid;grid-template-columns:36px 1fr;column-gap:12px;row-gap:2px}
+  .steps li::before{grid-row:1/3;width:36px;height:36px;font-size:1.1rem}
+  .steps li h3{font-size:1.05rem}
+  .steps li p{font-size:.92rem}
+  .gallery{gap:12px}
+  .reviews{gap:12px}
+  .review{padding:16px}
+  .cta-band{gap:16px}
+  /* testata a una riga: telefono e preventivo sono gia nella barra in basso */
+  header .tel,header .btn{display:none}
+  .bar{min-height:60px}
+  .logo img{height:38px}
+}
