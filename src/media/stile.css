@@ -75,13 +75,20 @@ section.band.navy h2,section.band.navy h3{color:#fff}
 section.band.navy .eyebrow{color:#9DC0E0}
 .head{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
 
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.svc{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:4px;overflow:hidden;text-decoration:none;color:inherit}
-.svc:hover{border-color:var(--blue)}
-.svc .ph,.svc img{aspect-ratio:3/2;width:100%;object-fit:cover}
-.svc .txt{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1}
-.svc .more{margin-top:auto;font-weight:700;color:var(--blue);padding-top:8px}
-@media (max-width:900px){.services{grid-template-columns:1fr}}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc{position:relative;display:block;border-radius:10px;overflow:hidden;text-decoration:none}
+.svc img{width:100%;height:100%;aspect-ratio:3/2.6;object-fit:cover;transition:transform .3s}
+.svc:hover img{transform:scale(1.04)}
+.svc::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(10,25,38,.72))}
+.svc-title{position:absolute;left:16px;right:16px;bottom:14px;z-index:1;color:#fff;font-family:var(--display);font-weight:700;font-size:1.35rem;line-height:1.2;text-wrap:balance;hyphens:auto;overflow-wrap:break-word}
+@media (max-width:900px){
+  .services{grid-template-columns:1fr 1fr;gap:12px}
+  .svc:first-child{grid-row:span 2}
+  .svc img{aspect-ratio:auto}
+  .svc:nth-child(2) img,.svc:nth-child(3) img{aspect-ratio:4/3}
+  .svc:first-child img{min-height:100%}
+  .svc-title{left:12px;right:12px;bottom:10px;font-size:1.05rem}
+}
 
 
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
@@ -156,7 +163,7 @@ video{width:100%;object-fit:cover;border-radius:4px;display:block;background:#E5
 .review footer{background:none;color:var(--muted,#5A6672);padding:0;font-size:.92rem;font-weight:700}
 .job-card{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit}
 .job-card img{aspect-ratio:4/3;object-fit:cover;width:100%;border-radius:4px}
-.job-card h3{font-size:1.1rem}
+.job-card h3{font-size:1.05rem}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
 .filters a{font-size:.9rem;font-weight:700;text-decoration:none;color:var(--navy);border:1px solid var(--line);border-radius:20px;padding:6px 14px;background:var(--paper)}
 .filters a[aria-current]{background:var(--navy);color:#fff;border-color:var(--navy)}
