@@ -59,7 +59,7 @@ html[lang="it"] .lang [data-l="it"],html[lang="en"] .lang [data-l="en"]{opacity:
 .hero figure{margin:0;position:relative}
 .hero figure img{aspect-ratio:4/3;object-fit:cover;width:100%;height:auto;border-radius:4px}
 .hero figcaption{position:absolute;left:12px;bottom:12px;background:rgba(21,51,76,.88);color:#fff;font-size:.8rem;padding:6px 10px;border-radius:3px}
-@media (max-width:800px){.hero{grid-template-columns:1fr;padding-block:32px;gap:28px}}
+@media (max-width:800px){.hero{grid-template-columns:1fr;padding-block:24px;gap:20px}.hero > div{gap:14px}.hero p.lead{font-size:1.02rem}.hero figure img{aspect-ratio:16/10}.ticks{gap:6px 16px}.ticks li{font-size:.9rem}}
 
 .facts{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line);background:var(--paper)}
 .facts div{padding:22px 16px;display:flex;flex-direction:column;gap:2px}
@@ -169,3 +169,19 @@ video{width:100%;object-fit:cover;border-radius:4px;display:block;background:#E5
 .faq details[open] summary::after{content:"−"}
 .faq details p{margin:0 0 18px;color:var(--muted)}
 .reviews-google{margin-top:28px}
+
+/* Spunte di fiducia nell'hero */
+.ticks{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px}
+.ticks li{display:flex;align-items:center;gap:8px;font-size:.95rem;font-weight:700;color:var(--navy)}
+.ticks li::before{content:"\2713";flex:none;width:22px;height:22px;border-radius:50%;background:#E3F0E8;color:var(--wa);font-size:.8rem;display:flex;align-items:center;justify-content:center}
+
+/* Barra fissa in basso sul telefono, come un'app */
+.mobilebar{display:none}
+@media (max-width:800px){
+  .mobilebar{position:fixed;inset:auto 0 0;z-index:9;display:grid;grid-template-columns:1fr 1fr 1.2fr;background:var(--paper);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);box-shadow:0 -2px 12px rgba(0,0,0,.08)}
+  .mobilebar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;text-decoration:none;font-weight:700;font-size:.95rem;color:var(--navy)}
+  .mobilebar a + a{border-left:1px solid var(--line)}
+  .mobilebar .mb-quote{background:var(--navy);color:#fff}
+  .wa{display:none}
+  body{padding-bottom:calc(56px + env(safe-area-inset-bottom,0px))}
+}
