@@ -1,0 +1,7 @@
+---
+permalink: /search.json
+eleventyExcludeFromCollections: true
+---
+[{%- for p in collections.all %}{% if p.url and p.url.endsWith('/') and not p.url.includes('grazie') and not p.url.includes('thank-you') and p.url != '/404.html' %}
+{"u":{{ p.url | json | safe }},"l":{{ (p.data.lang or 'it') | json | safe }},"t":{{ (p.data.title or '') | replace(' | CHR Costruzioni','') | replace(' | CHR','') | json | safe }},"d":{{ (p.data.description or '') | json | safe }},"x":{{ (p.content | striptags | replace(r/\s+/g,' ') | truncate(4000, true, '')) | json | safe }}}{% if not loop.last %},{% endif %}{% endif %}{%- endfor %}
+]
