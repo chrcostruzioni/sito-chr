@@ -2,14 +2,21 @@ slug: ristrutturazione-casa-medicina
 ordine: 2
 categorie: [ristrutturazioni]
 luogo: Medicina (BO)
-titolo_it: Ristrutturazione di una casa a Medicina
-titolo_en: Renovation of a house in Medicina
+titolo_it: Ristrutturazione completa di una casa a Medicina
+titolo_en: Full renovation of a house in Medicina
 descrizione_it: Un cantiere seguito dalla demolizione alle finiture. Nuovi impianti idraulici, di riscaldamento ed elettrici, nuove tramezze, scarichi rifatti sotto pavimento, massetti, nuovi infissi, rivestimenti in grande formato e collettore chiuso in cartongesso.
 descrizione_en: A job followed from demolition to finishes. New plumbing, heating and wiring, new partition walls, drains redone under the floor, screeds, new windows, large-format tiles and the manifold enclosed in plasterboard.
-copertina: med-13.jpg
-prima: ""
-dopo: ""
+copertina: med-fin-cucina.jpg
+prima: med-10.jpg
+dopo: med-fin-cucina.jpg
 foto:
+  - {file: med-fin-cucina.jpg, it: Cucina e zona pranzo finite, en: Finished kitchen and dining area}
+  - {file: med-fin-doppia-altezza.jpg, it: Soggiorno a doppia altezza con soffitto in perline bianco, en: Double-height living room with white panelled ceiling}
+  - {file: med-fin-soggiorno-tv.jpg, it: Soggiorno con pavimento in grande formato, en: Living room with large-format floor tiles}
+  - {file: med-fin-ingresso.jpg, it: Ingresso con parete decorata, en: Entrance with a decorated feature wall}
+  - {file: med-fin-porta-vetro.jpg, it: Porta scorrevole in vetro satinato, en: Frosted glass sliding door}
+  - {file: med-fin-bagno-beige.jpg, it: Bagno finito con doccia e nicchia, en: Finished bathroom with shower and niche}
+  - {file: med-fin-bagno-grigio.jpg, it: Secondo bagno con doccia a profili neri, en: Second bathroom with black-framed shower}
   - {file: med-07.jpg, it: Il vecchio bagno durante la demolizione, en: The old bathroom during demolition}
   - {file: med-01.jpg, it: Pareti scrostate e nuove tubazioni nelle tracce, en: Walls stripped and new pipes in the chases}
   - {file: med-02.jpg, it: Nuove tubazioni del riscaldamento, en: New heating pipes}
@@ -23,5 +30,5 @@ foto:
   - {file: med-11.jpg, it: Posa della nuova soglia, en: Fitting the new sill}
   - {file: med-12.jpg, it: Rivestimento in lastre di grande formato, en: Large-format wall tiles being laid}
   - {file: med-14.jpg, it: Collettore del riscaldamento chiuso in cartongesso, en: Heating manifold enclosed in plasterboard}
-  - {file: med-13.jpg, it: Soggiorno con soffitto in perline tinteggiato di bianco, en: Living room with the panelled ceiling painted white}
+  - {file: med-13.jpg, it: Il soggiorno a doppia altezza durante i lavori, en: The double-height living room during the work}
 video: []
