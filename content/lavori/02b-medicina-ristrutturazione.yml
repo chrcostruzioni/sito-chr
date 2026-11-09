@@ -1,0 +1,27 @@
+slug: ristrutturazione-casa-medicina
+ordine: 2
+categorie: [ristrutturazioni]
+luogo: Medicina (BO)
+titolo_it: Ristrutturazione di una casa a Medicina
+titolo_en: Renovation of a house in Medicina
+descrizione_it: Un cantiere seguito dalla demolizione alle finiture. Nuovi impianti idraulici, di riscaldamento ed elettrici, nuove tramezze, scarichi rifatti sotto pavimento, massetti, nuovi infissi, rivestimenti in grande formato e collettore chiuso in cartongesso.
+descrizione_en: A job followed from demolition to finishes. New plumbing, heating and wiring, new partition walls, drains redone under the floor, screeds, new windows, large-format tiles and the manifold enclosed in plasterboard.
+copertina: med-13.jpg
+prima: ""
+dopo: ""
+foto:
+  - {file: med-07.jpg, it: Il vecchio bagno durante la demolizione, en: The old bathroom during demolition}
+  - {file: med-01.jpg, it: Pareti scrostate e nuove tubazioni nelle tracce, en: Walls stripped and new pipes in the chases}
+  - {file: med-02.jpg, it: Nuove tubazioni del riscaldamento, en: New heating pipes}
+  - {file: med-03.jpg, it: Impianti segnati prima dei lavori, en: Services marked before the work}
+  - {file: med-06.jpg, it: Tracce per i nuovi impianti, en: Chases for the new services}
+  - {file: med-05.jpg, it: Nuova distribuzione degli spazi, en: New layout of the rooms}
+  - {file: med-04.jpg, it: Nuove tramezze in laterizio e impianti a pavimento, en: New brick partitions and underfloor services}
+  - {file: med-09.jpg, it: Nuovi scarichi sotto pavimento, en: New drains under the floor}
+  - {file: med-08.jpg, it: Il bagno intonacato con il massetto, en: The bathroom plastered with the new screed}
+  - {file: med-10.jpg, it: Massetto finito e nuovi infissi, en: Screed finished and new windows}
+  - {file: med-11.jpg, it: Posa della nuova soglia, en: Fitting the new sill}
+  - {file: med-12.jpg, it: Rivestimento in lastre di grande formato, en: Large-format wall tiles being laid}
+  - {file: med-14.jpg, it: Collettore del riscaldamento chiuso in cartongesso, en: Heating manifold enclosed in plasterboard}
+  - {file: med-13.jpg, it: Soggiorno con soffitto in perline tinteggiato di bianco, en: Living room with the panelled ceiling painted white}
+video: []
