@@ -247,3 +247,9 @@ dialog.search::backdrop{background:rgba(21,51,76,.45)}
   .hero figure a{display:block;flex:1}
   .hero figure img{height:100%;aspect-ratio:auto;min-height:360px;border-radius:10px}
 }
+/* Hero su telefono: testo e immagine nella stessa cornice */
+@media (max-width:800px){
+  .hero{width:calc(100% - 24px);margin:16px auto 8px;padding:20px 16px 16px;gap:18px;background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 6px 24px rgba(21,51,76,.08)}
+  .hero-card{background:none;border:0;box-shadow:none;padding:0}
+  .hero figure img{border-radius:10px}
+}
