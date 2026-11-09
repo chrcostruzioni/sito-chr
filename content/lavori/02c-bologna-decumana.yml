@@ -1,0 +1,27 @@
+slug: ristrutturazione-bologna-via-decumana
+ordine: 1.7
+categorie: [ristrutturazioni, bagni]
+luogo: Bologna, zona via Decumana
+titolo_it: Ristrutturazione di un appartamento a Bologna, zona via Decumana
+titolo_en: Renovation of a flat in Bologna, via Decumana area
+descrizione_it: Un appartamento rinnovato dalla demolizione alle finiture. Vecchi pavimenti tolti, nuovi impianti elettrici e scarichi, bagno nuovo con piatto doccia filo pavimento e rivestimento in grande formato, parquet levigato, lavori in cartongesso, nuovo pavimento e pareti tinteggiate.
+descrizione_en: A flat renovated from demolition to finishes. Old floors removed, new wiring and drains, a new bathroom with a flush shower tray and large-format tiles, sanded parquet, plasterboard work, new flooring and freshly painted walls.
+copertina: dec-fin-soggiorno.jpg
+prima: dec-prima-soggiorno.jpg
+dopo: dec-fin-soggiorno.jpg
+foto:
+  - {file: dec-fin-soggiorno.jpg, it: Soggiorno finito con nuovo pavimento e pareti bicolore, en: Finished living room with new floor and two-tone walls}
+  - {file: dec-prima-soggiorno.jpg, it: Il soggiorno prima dei lavori, en: The living room before the work}
+  - {file: dec-fin-cucina.jpg, it: Cucina pronta per il montaggio dei mobili, en: Kitchen ready for the units to be fitted}
+  - {file: dec-fin-cucina-finestra.jpg, it: La cucina dal lato finestra, en: The kitchen from the window side}
+  - {file: dec-fin-doccia.jpg, it: Bagno nuovo con doccia filo pavimento e scaldasalviette, en: New bathroom with flush shower and towel radiator}
+  - {file: dec-fin-bagno.jpg, it: Mobile bagno sospeso e specchio con luce, en: Wall-hung vanity unit and lit mirror}
+  - {file: dec-prima-corridoio.jpg, it: Il corridoio prima dei lavori, en: The hallway before the work}
+  - {file: dec-01.jpg, it: Vecchio pavimento rimosso, en: Old floor removed}
+  - {file: dec-02.jpg, it: Tracce per il nuovo impianto elettrico, en: Chases for the new wiring}
+  - {file: dec-03.jpg, it: Nuovi scarichi, en: New drains}
+  - {file: dec-04.jpg, it: Posa del piatto doccia, en: Fitting the shower tray}
+  - {file: dec-05.jpg, it: Rivestimento del bagno in lastre di grande formato, en: Bathroom walls in large-format tiles}
+  - {file: dec-06.jpg, it: Levigatura del parquet, en: Sanding the parquet}
+  - {file: dec-07.jpg, it: Struttura in cartongesso, en: Plasterboard framework}
+video: []
