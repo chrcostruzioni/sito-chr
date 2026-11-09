@@ -27,5 +27,4 @@ foto:
   - {file: dec-06.jpg, it: Levigatura del parquet, en: Sanding the parquet}
   - {file: dec-07.jpg, it: Struttura in cartongesso, en: Plasterboard framework}
   - {file: dec-09.jpg, it: Pareti rasate pronte per la pittura, en: Walls skimmed and ready for painting}
-video:
-  - {file: decumana-impianti.mp4, poster: decumana-impianti-poster.jpg, verticale: true, it: "Il nuovo impianto elettrico durante i lavori", en: "The new wiring during the work"}
+video: []
