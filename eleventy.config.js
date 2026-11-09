@@ -37,6 +37,7 @@ export default function (cfg) {
   cfg.addPassthroughCopy({ "src/admin": "admin" });
   cfg.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
   cfg.addFilter("perCategoria", (lavori, c) => lavori.filter(l => (l.categorie || []).includes(c)));
+  cfg.addFilter("video", (job, file) => (job.video || []).find(v => v.file === file) || (job.video || [])[0]);
   cfg.addFilter("trovaLavoro", (lavori, slug) => lavori.find(l => l.slug === slug));
   cfg.addFilter("img", f => !f ? "" : f.startsWith("/") ? f : (f.includes("/") ? "/" + f : "/media/img/" + f));
   cfg.addFilter("vid", f => !f ? "" : f.startsWith("/") ? f : (f.includes("/") ? "/" + f : "/media/video/" + f));

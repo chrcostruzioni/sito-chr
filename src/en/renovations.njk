@@ -31,11 +31,19 @@ ogimage: pia-13.jpg
   </div>
   <div class="stack">{{ ba(pia, L, 'en') }}<p class="cap">Full renovation of a house in Pianoro (BO): new floor plan, windows turned into French doors and a new front door opened in the load-bearing wall.</p></div>
 </div></section>
+<section class="band white" id="plasterboard"><div class="wrap split" style="align-items:center">
+  <div class="stack"><span class="eyebrow">Made to measure</span><h2>Plasterboard work</h2>
+    <p>With plasterboard we build what your home needs, to measure: built-in bookcases and wall niches, partition walls, wall linings and false ceilings, and enclosures for wardrobes with sliding doors.</p>
+    <p>We prepare the points for sockets and lights in advance, then fill, skim and paint, so the work blends in with the rest of the house.</p>
+    <p><a class="btn btn-primary" href="/en/quote/">Ask for a free quote</a></p>
+  </div>
+  <div class="duo"><figure style="margin:0"><img src="/media/img/cartongesso-libreria.jpg" alt="Built-in plasterboard bookcase with shelves and sockets, under construction" loading="lazy" style="aspect-ratio:3/4;object-fit:cover;width:100%;border-radius:4px"><figcaption class="cap">Built-in bookcase, under construction</figcaption></figure><figure style="margin:0"><img src="/media/img/cartongesso-armadio.jpg" alt="Wardrobe with sliding doors and plasterboard enclosure above" loading="lazy" style="aspect-ratio:3/4;object-fit:cover;width:100%;border-radius:4px"><figcaption class="cap">Sliding-door wardrobe enclosed in plasterboard</figcaption></figure></div>
+</div></section>
 <section class="band"><div class="wrap">
   <div class="head"><span class="eyebrow">One job from start to finish</span><h2>Pianoro: the stages of the work</h2><p>{{ pia.descrizione_en }}</p></div>
   <div class="gallery">
     {% for f in pia.foto %}<figure><img src="{{ f.file | img }}" alt="{{ f.en }}" loading="lazy"><figcaption>{{ f.en }}</figcaption></figure>{% endfor %}
-    <figure>{{ vid(pia.video[1], 'en', 'v43') }}<figcaption>{{ pia.video[1].en }}</figcaption></figure>
+    <figure>{{ vid((pia | video('posa-spina-pesce.mp4')), 'en', 'v43') }}<figcaption>{{ (pia | video('posa-spina-pesce.mp4')).en }}</figcaption></figure>
   </div>
   <p style="margin-top:24px"><a class="btn btn-ghost" href="/en/our-work/pianoro-ristrutturazione-completa/">All photos and videos from Pianoro</a></p>
 </div></section>
