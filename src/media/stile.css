@@ -4,7 +4,7 @@
 @font-face{font-family:"Libre Caslon Text";font-weight:700;font-display:swap;src:url(/media/font/libre-caslon-text-latin-700-normal.woff2) format("woff2")}
 /* Layout: sito vetrina a pagine (navigazione con #), testata fissa con telefono, bande piene alternate calce/blu, stessa identità del volantino "Blu e progetto". Tema chiaro unico, scelto per coerenza con la grafica aziendale. */
 :root{
-  --navy:#15334C; --blue:#33689A; --lime:#FAF9F7; --paper:#FFFFFF; --line:#D9DEE4; --muted:#56616E; --ink:#1B2530;
+  --navy:#15334C; --blue:#33689A; --lime:#EEF0F2; --paper:#FFFFFF; --line:#D9DEE4; --muted:#56616E; --ink:#1B2530;
   --wa:#1F7A4D;
   --display:"Libre Caslon Text",Georgia,"Times New Roman",serif;
   --body:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
