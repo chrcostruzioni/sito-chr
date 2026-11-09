@@ -2,6 +2,10 @@
   "it": {
     "lang": "it",
     "home": "/",
+    "menu_extra": [
+      {"t": "Terrazze e balconi", "u": "/tetti-impermeabilizzazioni-bologna/#terrazze"},
+      {"t": "Lavori in cartongesso", "u": "/ristrutturazioni-bologna/#cartongesso"}
+    ],
     "menu": [
       {"t": "Ristrutturazioni complete", "u": "/ristrutturazioni-bologna/"},
       {"t": "Bagni e cucine", "u": "/bagni-cucine-bologna/"},
@@ -34,6 +38,10 @@
   "en": {
     "lang": "en",
     "home": "/en/",
+    "menu_extra": [
+      {"t": "Terraces and balconies", "u": "/en/roofs-waterproofing-bologna/#terraces"},
+      {"t": "Plasterboard work", "u": "/en/renovations-bologna/#plasterboard"}
+    ],
     "menu": [
       {"t": "Full renovations", "u": "/en/renovations-bologna/"},
       {"t": "Bathrooms and kitchens", "u": "/en/bathrooms-kitchens-bologna/"},
