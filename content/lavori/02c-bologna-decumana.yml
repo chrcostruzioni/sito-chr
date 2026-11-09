@@ -6,9 +6,9 @@ titolo_it: Ristrutturazione di un appartamento a Bologna, zona via Decumana
 titolo_en: Renovation of a flat in Bologna, via Decumana area
 descrizione_it: Un appartamento rinnovato dalla demolizione alle finiture. Vecchi pavimenti tolti, nuovi impianti elettrici e scarichi, bagno nuovo con piatto doccia filo pavimento e rivestimento in grande formato, parquet levigato, lavori in cartongesso, nuovo pavimento e pareti tinteggiate.
 descrizione_en: A flat renovated from demolition to finishes. Old floors removed, new wiring and drains, a new bathroom with a flush shower tray and large-format tiles, sanded parquet, plasterboard work, new flooring and freshly painted walls.
-copertina: dec-fin-soggiorno.jpg
-prima: dec-prima-soggiorno.jpg
-dopo: dec-fin-soggiorno.jpg
+copertina: dec-fin-soggiorno-finestra.jpg
+prima: dec-01.jpg
+dopo: dec-fin-soggiorno-finestra.jpg
 foto:
   - {file: dec-prima-soggiorno.jpg, it: Il soggiorno prima dei lavori, en: The living room before the work}
   - {file: dec-prima-corridoio.jpg, it: Il corridoio prima dei lavori, en: The hallway before the work}
@@ -22,6 +22,7 @@ foto:
   - {file: dec-06.jpg, it: Levigatura del parquet, en: Sanding the parquet}
   - {file: dec-07.jpg, it: Struttura in cartongesso, en: Plasterboard framework}
   - {file: dec-09.jpg, it: Pareti rasate pronte per la pittura, en: Walls skimmed and ready for painting}
+  - {file: dec-fin-soggiorno-finestra.jpg, it: Soggiorno finito con faretti su binario, en: Finished living room with track spotlights}
   - {file: dec-fin-soggiorno.jpg, it: Soggiorno finito con nuovo pavimento e pareti bicolore, en: Finished living room with new floor and two-tone walls}
   - {file: dec-fin-cucina.jpg, it: Cucina pronta per il montaggio dei mobili, en: Kitchen ready for the units to be fitted}
   - {file: dec-fin-cucina-finestra.jpg, it: La cucina dal lato finestra, en: The kitchen from the window side}
