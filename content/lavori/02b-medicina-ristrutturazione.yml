@@ -7,10 +7,11 @@ titolo_en: Full renovation of a house in Medicina
 descrizione_it: Un cantiere seguito dalla demolizione alle finiture. Nuovi impianti idraulici, di riscaldamento ed elettrici, nuove tramezze, scarichi rifatti sotto pavimento, massetti, nuovi infissi, rivestimenti in grande formato e collettore chiuso in cartongesso.
 descrizione_en: A job followed from demolition to finishes. New plumbing, heating and wiring, new partition walls, drains redone under the floor, screeds, new windows, large-format tiles and the manifold enclosed in plasterboard.
 copertina: med-fin-cucina.jpg
-prima: med-10.jpg
+prima: med-prima-cucina.jpg
 dopo: med-fin-cucina.jpg
 foto:
   - {file: med-fin-cucina.jpg, it: Cucina e zona pranzo finite, en: Finished kitchen and dining area}
+  - {file: med-prima-cucina.jpg, it: La cucina prima dei lavori, en: The kitchen before the work}
   - {file: med-fin-doppia-altezza.jpg, it: Soggiorno a doppia altezza con soffitto in perline bianco, en: Double-height living room with white panelled ceiling}
   - {file: med-fin-soggiorno-tv.jpg, it: Soggiorno con pavimento in grande formato, en: Living room with large-format floor tiles}
   - {file: med-fin-ingresso.jpg, it: Ingresso con parete decorata, en: Entrance with a decorated feature wall}
