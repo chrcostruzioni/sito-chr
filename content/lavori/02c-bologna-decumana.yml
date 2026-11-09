@@ -19,9 +19,13 @@ foto:
   - {file: dec-prima-corridoio.jpg, it: Il corridoio prima dei lavori, en: The hallway before the work}
   - {file: dec-01.jpg, it: Vecchio pavimento rimosso, en: Old floor removed}
   - {file: dec-02.jpg, it: Tracce per il nuovo impianto elettrico, en: Chases for the new wiring}
+  - {file: dec-10.jpg, it: Nuove scatole e corrugati per l'impianto elettrico, en: New boxes and conduits for the wiring}
+  - {file: dec-08.jpg, it: Nuova tubazione del gas sotto traccia, en: New gas pipe set into the wall}
   - {file: dec-03.jpg, it: Nuovi scarichi, en: New drains}
   - {file: dec-04.jpg, it: Posa del piatto doccia, en: Fitting the shower tray}
   - {file: dec-05.jpg, it: Rivestimento del bagno in lastre di grande formato, en: Bathroom walls in large-format tiles}
   - {file: dec-06.jpg, it: Levigatura del parquet, en: Sanding the parquet}
   - {file: dec-07.jpg, it: Struttura in cartongesso, en: Plasterboard framework}
-video: []
+  - {file: dec-09.jpg, it: Pareti rasate pronte per la pittura, en: Walls skimmed and ready for painting}
+video:
+  - {file: decumana-impianti.mp4, poster: decumana-impianti-poster.jpg, verticale: true, it: "Il nuovo impianto elettrico durante i lavori", en: "The new wiring during the work"}
