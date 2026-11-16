@@ -1,0 +1,37 @@
+---
+layout: base.njk
+lang: it
+permalink: /impermeabilizzazione-balconi-terrazze-bologna/
+title: "Impermeabilizzazione balconi e terrazze a Bologna | CHR Costruzioni"
+description: "Infiltrazioni dal balcone o dal terrazzo? Impermeabilizziamo balconi, terrazze e coperture piane a Bologna e provincia. Sopralluogo e preventivo gratuiti."
+ogimage: f08.jpg
+servizio: "Impermeabilizzazione di balconi e terrazze"
+---
+{% set job = lavori | trovaLavoro('impermeabilizzazione-balconi-terrazze') %}
+<div class="wrap page-head"><span class="eyebrow">Servizi</span><h1>Impermeabilizzazione di balconi e terrazze a Bologna</h1><p class="lead">Macchie sul soffitto del vicino, intonaco che si stacca sotto il balcone, acqua che entra dal terrazzo? Troviamo da dove passa l'acqua e rifacciamo l'impermeabilizzazione in modo che duri.</p></div>
+<section class="band white"><div class="wrap split">
+  <div class="stack"><h2>Come lavoriamo</h2>
+    <ul class="list">
+      <li>Sopralluogo gratuito per capire da dove entra l'acqua</li>
+      <li>Rimozione del vecchio pavimento quando serve</li>
+      <li>Preparazione del fondo e pendenze corrette verso gli scarichi</li>
+      <li>Sigillatura dei punti critici: bocchettoni, risvolti sui muri, soglie e ringhiere</li>
+      <li>Guaine o impermeabilizzanti liquidi, scelti in base al caso</li>
+      <li>Nuovo pavimento, frontalini e gocciolatoi</li>
+    </ul>
+    <p>Lavoriamo su balconi, terrazze, lastrici solari e coperture piane, a Bologna e in tutta la provincia. Se il balcone è condominiale ti aiutiamo anche a preparare il preventivo per l'amministratore.</p>
+    <p><a class="btn btn-primary" href="/preventivo/">Richiedi un preventivo gratuito</a></p>
+  </div>
+  <div class="duo">{% for f in job.foto %}<figure style="margin:0"><img src="{{ f.file | img }}" alt="{{ f.it }}" loading="lazy" style="aspect-ratio:3/4;object-fit:cover;width:100%;border-radius:4px"><figcaption class="cap">{{ f.it }}</figcaption></figure>{% endfor %}</div>
+</div></section>
+{% set faq = [
+  {d: "Si può impermeabilizzare un balcone senza togliere il pavimento?", r: "A volte sì, con prodotti trasparenti o guaine da posare sopra il pavimento esistente. Se però le pendenze sono sbagliate o il fondo è rovinato conviene rifare tutto. Te lo diciamo al sopralluogo."},
+  {d: "Quanto dura un'impermeabilizzazione fatta bene?", r: "Dipende dal sistema scelto e da quanto è esposto il balcone, ma un lavoro fatto bene dura molti anni. La parte più importante sono i punti critici: scarichi, angoli e risvolti sui muri."},
+  {d: "Ci sono bonus per impermeabilizzare il balcone o il terrazzo?", r: "In molti casi sì, rientra nei lavori di manutenzione straordinaria. Trovi i dettagli nella pagina <a href=\"/bonus-detrazioni/\">Bonus e detrazioni</a>."}
+] %}
+{% set faq_eyebrow = "Domande frequenti" %}{% set faq_title = "Impermeabilizzazioni: le domande più comuni" %}
+{% include "domande.njk" %}
+<section class="band"><div class="wrap stack">
+  <h2>Anche tetti e linee vita</h2>
+  <p>Se l'acqua arriva dal tetto, guarda <a href="/tetti-impermeabilizzazioni-bologna/">rifacimento tetti</a>. Quando si rifà la copertura spesso serve anche una <a href="/linee-vita-bologna/">linea vita</a>.</p>
+</div></section>

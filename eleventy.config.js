@@ -33,6 +33,18 @@ export default function (cfg) {
     }));
   });
 
+  // Immagine per le anteprime su WhatsApp, Facebook e Instagram: JPG 1200x630, leggero.
+  cfg.addFilter("ogimg", f => {
+    const nome = (f || "").split("/").pop();
+    return FOTO.test(nome) && fs.existsSync(path.join(IMG_DIR, nome)) ? `/media/img/og/${nome.replace(FOTO, "")}.jpg` : (f.startsWith("/") ? f : "/media/img/" + f);
+  });
+  cfg.on("eleventy.after", async ({ dir }) => {
+    const out = path.join(dir.output, "media/img/og");
+    fs.mkdirSync(out, { recursive: true });
+    await Promise.all(fs.readdirSync(IMG_DIR).filter(f => FOTO.test(f)).map(f =>
+      sharp(path.join(IMG_DIR, f)).rotate().resize(1200, 630, { fit: "cover", position: "attention" }).jpeg({ quality: 78, mozjpeg: true }).toFile(path.join(out, f.replace(FOTO, "") + ".jpg"))));
+  });
+
   cfg.addPassthroughCopy({ "src/media": "media" });
   cfg.addPassthroughCopy({ "src/admin": "admin" });
   cfg.addPassthroughCopy({ "src/robots.txt": "robots.txt" });

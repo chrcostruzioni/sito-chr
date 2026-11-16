@@ -3,8 +3,9 @@
     "lang": "it",
     "home": "/",
     "menu_extra": [
-      {"t": "Terrazze e balconi", "u": "/tetti-impermeabilizzazioni-bologna/#terrazze"},
-      {"t": "Lavori in cartongesso", "u": "/ristrutturazioni-bologna/#cartongesso"}
+      {"t": "Terrazze e balconi", "u": "/impermeabilizzazione-balconi-terrazze-bologna/"},
+      {"t": "Linee vita", "u": "/linee-vita-bologna/"},
+      {"t": "Lavori in cartongesso", "u": "/cartongesso-bologna/"}
     ],
     "menu": [
       {"t": "Ristrutturazioni complete", "u": "/ristrutturazioni-bologna/"},

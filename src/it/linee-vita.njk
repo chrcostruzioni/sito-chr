@@ -1,0 +1,28 @@
+---
+layout: base.njk
+lang: it
+permalink: /linee-vita-bologna/
+title: "Installazione linee vita sul tetto a Bologna | CHR Costruzioni"
+description: "Installiamo linee vita e sistemi anticaduta sui tetti a Bologna e provincia, anche durante il rifacimento della copertura. Sopralluogo e preventivo gratuiti."
+ogimage: f05.jpg
+servizio: "Installazione linee vita"
+---
+{% set job = lavori | trovaLavoro('installazione-linea-vita') %}
+<div class="wrap page-head"><span class="eyebrow">Servizi</span><h1>Installazione linee vita a Bologna</h1><p class="lead">La linea vita è il sistema anticaduta fissato sul tetto: permette a chi sale in copertura, per manutenzioni o riparazioni, di lavorare agganciato e in sicurezza.</p></div>
+<section class="band white"><div class="wrap split">
+  <div class="stack"><h2>Cosa facciamo</h2>
+    <ul class="list">
+      <li>Sopralluogo per capire tipo di tetto e percorsi di accesso</li>
+      <li>Scelta di ancoraggi e cavo adatti alla copertura</li>
+      <li>Montaggio con fissaggi alla struttura e sigillatura dei passaggi</li>
+      <li>Installazione anche durante il rifacimento del tetto, così si lavora una volta sola</li>
+    </ul>
+    <p>In Emilia-Romagna le norme regionali chiedono un sistema anticaduta in molti lavori sul tetto, per esempio quando si rifà la copertura. Al sopralluogo ti diciamo cosa serve per il tuo tetto.</p>
+    <p><a class="btn btn-primary" href="/preventivo/">Richiedi un preventivo gratuito</a></p>
+  </div>
+  <div class="duo">{% for f in job.foto %}<figure style="margin:0"><img src="{{ f.file | img }}" alt="{{ f.it }}" loading="lazy" style="aspect-ratio:3/4;object-fit:cover;width:100%;border-radius:4px"><figcaption class="cap">{{ f.it }}</figcaption></figure>{% endfor %}</div>
+</div></section>
+<section class="band"><div class="wrap stack">
+  <h2>Rifai anche il tetto?</h2>
+  <p>Guarda il nostro lavoro di <a href="/tetti-impermeabilizzazioni-bologna/">rifacimento tetti e impermeabilizzazioni</a> a Bologna e provincia.</p>
+</div></section>
