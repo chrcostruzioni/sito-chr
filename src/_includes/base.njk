@@ -13,14 +13,23 @@
 <link rel="alternate" hreflang="{{ 'en' if lang == 'it' else 'it' }}" href="{{ I.dominio }}{{ alt }}">
 <link rel="alternate" hreflang="x-default" href="{{ I.dominio }}{{ page.url if lang == 'it' else alt }}">
 {%- endif %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CHR Costruzioni">
+<meta property="og:url" content="{{ I.dominio }}{{ page.url }}">
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ description }}">
-<meta property="og:image" content="{{ I.dominio }}{{ (ogimage or 'pia-13.jpg') | img }}">
+<meta property="og:image" content="{{ I.dominio }}{{ (ogimage or 'pia-13.jpg') | ogimg }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="{{ 'it_IT' if lang == 'it' else 'en_GB' }}">
 <link rel="icon" href="/media/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/media/font/lato-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/media/stile.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"{{ I.nome }}","legalName":"{{ I.ragione_sociale }}","vatID":"IT{{ I.piva }}","url":"{{ I.dominio }}/","telephone":"{{ I.telefono_link }}","image":"{{ I.dominio }}/media/img/pia-13.jpg","logo":"{{ I.dominio }}/media/img/chr-orizzontale-nero.svg","founder":{"@type":"Person","name":"{{ I.titolare }}"},"areaServed":[{"@type":"City","name":"Bologna"},{"@type":"AdministrativeArea","name":"Città metropolitana di Bologna"},{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":44.4949,"longitude":11.3426},"geoRadius":50000}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],"knowsLanguage":["it","en"],"sameAs":["https://www.instagram.com/{{ I.instagram }}/"{% if I.facebook %},"{{ I.facebook }}"{% endif %}{% if I.google_recensioni %},"{{ I.google_recensioni }}"{% endif %}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["GeneralContractor","HomeAndConstructionBusiness"],"@id":"{{ I.dominio }}/#impresa","name":"{{ I.nome }}","legalName":"{{ I.ragione_sociale }}","vatID":"IT{{ I.piva }}","url":"{{ I.dominio }}/","telephone":"{{ I.telefono_link }}","email":"{{ I.email }}",{% if I.google_recensioni %}"hasMap":"{{ I.google_recensioni }}",{% endif %}"description":"Impresa edile a Bologna e provincia: ristrutturazioni complete, bagni e cucine, tetti, impermeabilizzazioni, linee vita e cartongesso. Sopralluogo e preventivo gratuiti.","priceRange":"Preventivo gratuito","hasOfferCatalog":{"@type":"OfferCatalog","name":"Servizi","itemListElement":[{% for sv in ["Ristrutturazioni complete","Ristrutturazione bagni e cucine","Rifacimento tetti","Impermeabilizzazione balconi e terrazze","Installazione linee vita","Lavori in cartongesso"] %}{"@type":"Offer","itemOffered":{"@type":"Service","name":"{{ sv }}"}}{% if not loop.last %},{% endif %}{% endfor %}]},"image":"{{ I.dominio }}/media/img/pia-13.jpg","logo":"{{ I.dominio }}/media/img/chr-orizzontale-nero.svg","founder":{"@type":"Person","name":"{{ I.titolare }}"},"areaServed":[{"@type":"City","name":"Bologna"},{"@type":"AdministrativeArea","name":"Città metropolitana di Bologna"},{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":44.4949,"longitude":11.3426},"geoRadius":50000}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],"knowsLanguage":["it","en"],"sameAs":["https://www.instagram.com/{{ I.instagram }}/"{% if I.facebook %},"{{ I.facebook }}"{% endif %}{% if I.google_recensioni %},"{{ I.google_recensioni }}"{% endif %}]}</script>
+{%- if servizio %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":{{ servizio | json | safe }},"serviceType":{{ servizio | json | safe }},"description":{{ description | json | safe }},"url":"{{ I.dominio }}{{ page.url }}","provider":{"@id":"{{ I.dominio }}/#impresa"},"areaServed":{"@type":"AdministrativeArea","name":"Città metropolitana di Bologna"}}</script>
+{%- endif %}
 </head>
 <body>
 <header>
@@ -61,7 +70,7 @@
 <footer>
   <div class="wrap cols">
     <div class="stack" style="gap:12px"><img src="/media/img/chr-orizzontale-bianco.svg" alt="CHR Costruzioni" style="height:44px;width:auto"><p>{{ L.footer_text }}</p></div>
-    <div><h3>{{ L.footer_servizi }}</h3><ul>{% for m in L.menu %}{% if loop.index <= 3 %}<li><a href="{{ m.u }}">{{ m.t }}</a></li>{% endif %}{% endfor %}{% for x in L.menu_extra %}<li><a href="{{ x.u }}">{{ x.t }}</a></li>{% endfor %}<li><a href="{{ L.menu[4].u }}">{{ L.bonus_label }}</a></li></ul></div>
+    <div><h3>{{ L.footer_servizi }}</h3><ul>{% for m in L.menu %}{% if loop.index <= 3 %}<li><a href="{{ m.u }}">{{ m.t }}</a></li>{% endif %}{% endfor %}{% for x in L.menu_extra %}<li><a href="{{ x.u }}">{{ x.t }}</a></li>{% endfor %}<li><a href="{{ L.menu[4].u }}">{{ L.bonus_label }}</a></li>{% if lang == 'it' %}<li><a href="/impresa-edile-bologna-provincia/">Dove lavoriamo</a></li>{% endif %}</ul></div>
     <div><h3>{{ L.footer_contatti }}</h3><ul><li><a href="tel:{{ I.telefono_link }}">{{ I.telefono }}</a></li><li>{{ I.orari_it if lang == 'it' else I.orari_en }}</li><li><a href="https://www.instagram.com/{{ I.instagram }}/">@{{ I.instagram }}</a></li>{% if I.facebook %}<li><a href="{{ I.facebook }}">Facebook</a></li>{% endif %}<li>{{ I.ragione_sociale }}</li><li>{{ L.piva }} {{ I.piva }}</li></ul></div>
   </div>
 </footer>

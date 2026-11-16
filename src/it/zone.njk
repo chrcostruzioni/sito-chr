@@ -1,0 +1,33 @@
+---
+layout: base.njk
+lang: it
+permalink: /impresa-edile-bologna-provincia/
+title: "Impresa edile a Bologna e provincia: dove lavoriamo | CHR Costruzioni"
+description: "Ristrutturazioni, bagni, tetti e impermeabilizzazioni a Bologna e nei comuni della provincia: Pianoro, Medicina, San Lazzaro, Casalecchio, Imola e altri."
+ogimage: pia-13.jpg
+---
+{% from "macro.njk" import card %}
+{% set L = lingue.it %}
+<div class="wrap page-head"><span class="eyebrow">Zona di lavoro</span><h1>Impresa edile a Bologna e provincia</h1><p class="lead">Lavoriamo a Bologna città e in tutti i comuni della provincia. Il sopralluogo e il preventivo sono gratuiti ovunque.</p></div>
+<section class="band white"><div class="wrap split">
+  <div class="stack"><h2>Dove lavoriamo</h2>
+    <p><strong>Bologna</strong>, tutti i quartieri: Centro storico, Santo Stefano, Navile, Bolognina, Corticella, San Donato, San Vitale, Savena, Borgo Panigale, Reno, Porto e Saragozza.</p>
+    <p><strong>Provincia di Bologna</strong>: Pianoro, Medicina, San Lazzaro di Savena, Casalecchio di Reno, Zola Predosa, Castel Maggiore, Granarolo dell'Emilia, Budrio, Castenaso, Ozzano dell'Emilia, Castel San Pietro Terme, Imola, Sasso Marconi, Calderara di Reno, Anzola dell'Emilia, San Giovanni in Persiceto, Molinella e gli altri comuni della città metropolitana.</p>
+    <p>Non trovi il tuo comune? Chiamaci o scrivici su WhatsApp: se sei in provincia di Bologna, arriviamo.</p>
+    <p><a class="btn btn-primary" href="/preventivo/">Richiedi un preventivo gratuito</a></p>
+  </div>
+  <div class="stack"><h2>Cosa facciamo</h2>
+    <ul class="list">
+      <li><a href="/ristrutturazioni-bologna/">Ristrutturazioni complete di case e appartamenti</a></li>
+      <li><a href="/bagni-cucine-bologna/">Ristrutturazione bagni e cucine</a></li>
+      <li><a href="/tetti-impermeabilizzazioni-bologna/">Rifacimento tetti</a></li>
+      <li><a href="/impermeabilizzazione-balconi-terrazze-bologna/">Impermeabilizzazione di balconi e terrazze</a></li>
+      <li><a href="/linee-vita-bologna/">Installazione linee vita</a></li>
+      <li><a href="/cartongesso-bologna/">Lavori in cartongesso</a></li>
+    </ul>
+  </div>
+</div></section>
+<section class="band"><div class="wrap">
+  <div class="head"><span class="eyebrow">Lavori recenti</span><h2>Alcuni cantieri in zona</h2></div>
+  <div class="gallery">{% for job in lavori %}{% if job.luogo and loop.index0 < 8 %}{{ card(job, L, 'it') }}{% endif %}{% endfor %}</div>
+</div></section>
